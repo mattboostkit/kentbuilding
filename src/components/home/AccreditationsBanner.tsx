@@ -1,0 +1,67 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Award, Shield, BadgeCheck, Hammer, Verified } from 'lucide-react';
+
+const AccreditationsBanner: React.FC = () => {
+  const accreditations = [
+    {
+      icon: Award,
+      title: 'Federation of Master Builders',
+      description: 'Registered Member #71497',
+    },
+    {
+      icon: Shield,
+      title: 'Fully Insured',
+      description: 'Public & Employer Liability',
+    },
+    {
+      icon: BadgeCheck,
+      title: 'Trading Standards',
+      description: 'Approved Contractor',
+    },
+    {
+      icon: Hammer,
+      title: 'Construction Line',
+      description: 'Gold Member Status',
+    },
+    {
+      icon: Verified,
+      title: 'ISO 9001',
+      description: 'Quality Management',
+    },
+  ];
+
+  return (
+    <section className="bg-gray-100 py-10">
+      <div className="container-custom">
+        <div className="text-center mb-8">
+          <h3 className="text-2xl font-bold text-gray-900">Our Accreditations & Certifications</h3>
+          <p className="text-gray-600 mt-2">
+            We're proud to be recognized by these industry-leading organizations
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+          {accreditations.map((item, index) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center text-center"
+            >
+              <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mb-3">
+                <item.icon size={24} className="text-primary-600" />
+              </div>
+              <h4 className="text-base font-semibold text-gray-900 mb-1">{item.title}</h4>
+              <p className="text-sm text-gray-600">{item.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AccreditationsBanner;
