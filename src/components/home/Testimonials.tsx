@@ -5,30 +5,75 @@ import { motion } from 'framer-motion';
 const testimonials = [
   {
     id: 1,
-    name: 'James Thompson',
-    location: 'Canterbury, Kent',
-    testimonial: 'We are absolutely thrilled with our home extension. The team at Kent Construction was professional, courteous, and completed the work to an exceptional standard. They were always on hand to answer questions and kept us informed throughout the project.',
+    name: 'Jonathan Kent',
+    location: 'Bewl Water',
+    testimonial: 'This first-phase barn restoration involved careful dismantling, reassembling on new foundations, insulating, reroofing and replacing major timbers. Spence and team solved problems, controlled costs and delivered superb stone, brick and oak-frame work. Even the conservation officer was impressed. Highly recommended.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=150',
-    project: 'Home Extension',
+    project: 'Barn Restoration',
   },
   {
     id: 2,
-    name: 'Emma Richardson',
-    location: 'Sevenoaks, Kent',
-    testimonial: 'After years of dreaming about renovating our period property, Kent Construction turned our vision into reality. Their understanding of listed buildings and attention to detail preserved the character while bringing modern comforts. Exceptional work!',
+    name: 'Mike',
+    location: 'Matfield',
+    testimonial: 'Spencer\'s team renovated our 150-year-old house and basement reliably and honestly. When issues arose, he clearly explained options. We\'re very happy with the quality and transparency.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150',
-    project: 'Listed Building Renovation',
+    project: 'Period Property Renovation',
   },
   {
     id: 3,
-    name: 'Robert Collins',
-    location: 'Maidstone, Kent',
-    testimonial: 'As a business owner, minimizing disruption during our office renovation was crucial. The team delivered on time, on budget, and with minimal impact on our operations. The result has transformed our workspace and impressed our clients.',
+    name: 'Ellie',
+    location: 'Tonbridge',
+    testimonial: 'Kent Building & Construction listened, suggested improvements and always delivered exactly what I wanted. Honest, transparent and excellent finish. I\'d happily use and recommend them again.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150',
-    project: 'Commercial Office Refurbishment',
+    project: 'Home Renovation',
+  },
+  {
+    id: 4,
+    name: 'Kathy & Andrew',
+    location: 'Hackney',
+    testimonial: 'Spencer repaired our Victorian house\'s structure and damp. Despite unexpected extra work, he warned us in advance and included us in every decision. Spencer, Nathan and Robert were punctual, hardworking and professional. Our façade is now structurally sound—highly recommended.',
+    rating: 5,
+    project: 'Victorian House Restoration',
+  },
+  {
+    id: 5,
+    name: 'Graham Wykes',
+    location: 'Tunbridge Wells & Virginia Water',
+    testimonial: 'On five high-value properties Spencer consistently fixed underlying issues to the highest standard, delivering excellent finishes. I\'ve recommended him to friends, all of whom appreciated his skill and reliability.',
+    rating: 5,
+    project: 'High-Value Property Renovation',
+  },
+  {
+    id: 6,
+    name: 'Sarah Garrett',
+    location: 'Ninfield',
+    testimonial: 'Spencer was professional, friendly and committed. When project scope changed, he stayed engaged, offered clear explanations and solution options. His pride in quality and exemplary customer service make him highly recommendable.',
+    rating: 5,
+    project: 'Building Project',
+  },
+  {
+    id: 7,
+    name: 'Fiona, Andy & Alex Pocock',
+    location: 'Horsmonden',
+    testimonial: 'KBC took on our challenging project mid-stream, working through COVID to source materials and maintain progress. Their suggestions enhanced our build. Professional, friendly and always reachable—we\'ve already recommended them and will use them again.',
+    rating: 5,
+    project: 'Complex Build Project',
+  },
+  {
+    id: 8,
+    name: 'Mrs Habershon',
+    location: 'Hand Cross',
+    testimonial: 'After our builder withdrew, Spencer seamlessly took over our kitchen/diner build and alterations. He planned expertly, worked hard, listened to our ideas and kept things running smoothly. A pleasure to work with, especially supporting my disabled husband.',
+    rating: 5,
+    project: 'Kitchen Extension',
+  },
+  {
+    id: 9,
+    name: 'van Asselt family',
+    location: 'Fletching & Saint-Tropez',
+    testimonial: 'KBC beautifully executed two diverse projects—an oak-barn extension and a villa refurbishment in France. Meticulous workmanship and clear communication delivered homes we\'re proud of. Highly recommended.',
+    rating: 5,
+    project: 'International Projects',
   },
 ];
 
@@ -40,7 +85,7 @@ const Testimonials: React.FC = () => {
   };
 
   const prevTestimonial = () => {
-    setActiveIndex((prevIndex) => 
+    setActiveIndex((prevIndex) =>
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
   };
@@ -50,12 +95,12 @@ const Testimonials: React.FC = () => {
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center" />
       </div>
-      
+
       <div className="container-custom relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="section-title text-white">Client <span className="text-primary-200">Testimonials</span></h2>
           <p className="section-subtitle text-primary-100">
-            Don't just take our word for it. Hear what our clients have to say about their experience working with us.
+            Don't just take our word for it. Read what our clients have to say about their experience working with Spencer and the Kent Building & Construction team.
           </p>
         </div>
 
@@ -64,13 +109,13 @@ const Testimonials: React.FC = () => {
             <div className="absolute -left-8 top-0 text-primary-400 opacity-30">
               <Quote size={120} />
             </div>
-            
+
             <div className="bg-white rounded-lg shadow-custom-lg p-8 md:p-12 relative z-10">
               {testimonials.map((testimonial, index) => (
                 <motion.div
                   key={testimonial.id}
                   initial={{ opacity: 0, x: 20 }}
-                  animate={{ 
+                  animate={{
                     opacity: index === activeIndex ? 1 : 0,
                     x: index === activeIndex ? 0 : 20
                   }}
@@ -78,24 +123,17 @@ const Testimonials: React.FC = () => {
                   className={`${index === activeIndex ? 'block' : 'hidden'}`}
                 >
                   <div className="flex flex-wrap items-center justify-between mb-6">
-                    <div className="flex items-center mb-4 md:mb-0">
-                      <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
-                        <img 
-                          src={testimonial.image} 
-                          alt={testimonial.name} 
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
+                    <div className="mb-4 md:mb-0">
                       <div>
                         <h4 className="text-xl font-bold text-gray-900">{testimonial.name}</h4>
                         <p className="text-gray-600">{testimonial.location}</p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center">
                       <div className="flex mr-2">
                         {[...Array(5)].map((_, i) => (
-                          <Star 
+                          <Star
                             key={i}
                             size={18}
                             className={`${i < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`}
@@ -108,38 +146,38 @@ const Testimonials: React.FC = () => {
                       </span>
                     </div>
                   </div>
-                  
+
                   <p className="text-gray-700 text-lg leading-relaxed mb-6">
                     "{testimonial.testimonial}"
                   </p>
                 </motion.div>
               ))}
-              
+
               <div className="flex justify-between mt-8">
-                <button 
+                <button
                   onClick={prevTestimonial}
                   className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary-100 hover:text-primary-600 transition-colors"
                   aria-label="Previous testimonial"
                 >
                   <ChevronLeft size={20} />
                 </button>
-                
-                <div className="flex space-x-2">
+
+                <div className="flex flex-wrap justify-center space-x-2">
                   {testimonials.map((_, index) => (
                     <button
                       key={index}
                       onClick={() => setActiveIndex(index)}
-                      className={`w-3 h-3 rounded-full transition-all ${
-                        index === activeIndex 
-                          ? 'bg-primary-600 w-6' 
+                      className={`w-2 h-2 rounded-full transition-all ${
+                        index === activeIndex
+                          ? 'bg-primary-600 w-4'
                           : 'bg-gray-300 hover:bg-gray-400'
                       }`}
                       aria-label={`Go to testimonial ${index + 1}`}
                     />
                   ))}
                 </div>
-                
-                <button 
+
+                <button
                   onClick={nextTestimonial}
                   className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-primary-100 hover:text-primary-600 transition-colors"
                   aria-label="Next testimonial"

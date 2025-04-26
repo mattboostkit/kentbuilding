@@ -90,7 +90,7 @@ const projects = [
 
 const PortfolioBanner: React.FC = () => {
   return (
-    <section className="bg-primary-600 text-white py-28 relative">
+    <section className="bg-primary-600 text-white pt-48 pb-28 relative">
       <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
@@ -116,7 +116,13 @@ const PortfolioPage: React.FC = () => {
   useEffect(() => {
     // Update document title
     document.title = 'Portfolio | Kent Building & Construction';
-    
+
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'View our portfolio of completed building projects across Kent. See before and after transformations of period restorations, home renovations, extensions, and commercial refurbishments.');
+    }
+
     // Scroll to top on page load
     window.scrollTo(0, 0);
   }, []);
@@ -124,7 +130,25 @@ const PortfolioPage: React.FC = () => {
   return (
     <>
       <PortfolioBanner />
-      
+
+      <nav className="bg-gray-100 py-3" aria-label="Breadcrumb">
+        <div className="container-custom">
+          <ol className="flex flex-wrap items-center text-sm" itemScope itemType="https://schema.org/BreadcrumbList">
+            <li className="flex items-center" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <Link to="/" className="text-gray-500 hover:text-primary-600" itemProp="item">
+                <span itemProp="name">Home</span>
+              </Link>
+              <meta itemProp="position" content="1" />
+              <span className="mx-2 text-gray-400">/</span>
+            </li>
+            <li className="flex items-center" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <span className="text-gray-700 font-medium" itemProp="name">Portfolio</span>
+              <meta itemProp="position" content="2" />
+            </li>
+          </ol>
+        </div>
+      </nav>
+
       <section className="py-16">
         <div className="container-custom">
           <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -157,21 +181,21 @@ const PortfolioPage: React.FC = () => {
                 onMouseLeave={() => setHoveredProject(null)}
               >
                 <div className="relative aspect-[4/3]">
-                  <div 
+                  <div
                     className={`absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out ${
                       hoveredProject === project.id ? 'opacity-0' : 'opacity-100'
                     }`}
                     style={{ backgroundImage: `url(${project.image})` }}
                   />
-                  <div 
+                  <div
                     className={`absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out ${
                       hoveredProject === project.id ? 'opacity-100' : 'opacity-0'
                     }`}
                     style={{ backgroundImage: `url(${project.beforeImage})` }}
                   />
-                  
+
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-90"></div>
-                  
+
                   {hoveredProject === project.id && (
                     <div className="absolute top-4 right-4 z-10">
                       <span className="px-3 py-1 bg-white/90 text-gray-800 rounded-full text-sm font-medium">
@@ -180,7 +204,7 @@ const PortfolioPage: React.FC = () => {
                     </div>
                   )}
                 </div>
-                
+
                 <div className="p-6">
                   <span className="inline-block px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-xs font-medium mb-3">
                     {project.category}
@@ -188,7 +212,7 @@ const PortfolioPage: React.FC = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
                     {project.title}
                   </h3>
-                  
+
                   <div className="flex items-center text-gray-500 text-sm mb-4">
                     <div className="flex items-center mr-4">
                       <MapPin size={14} className="mr-1" />
@@ -199,11 +223,11 @@ const PortfolioPage: React.FC = () => {
                       <span>{project.completionDate}</span>
                     </div>
                   </div>
-                  
+
                   <p className="text-gray-600 line-clamp-2 mb-4">
                     {project.description}
                   </p>
-                  
+
                   <button className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700">
                     View Project Details <ArrowRight size={16} className="ml-1 transition-transform group-hover:translate-x-1" />
                   </button>
@@ -229,21 +253,21 @@ const PortfolioPage: React.FC = () => {
           <div className="bg-white rounded-lg w-full max-w-4xl max-h-[90vh] overflow-y-auto">
             {projects.filter(p => p.id === selectedProject).map(project => (
               <div key={project.id} className="relative">
-                <button 
+                <button
                   onClick={() => setSelectedProject(null)}
                   className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md z-10"
                   aria-label="Close modal"
                 >
                   ✕
                 </button>
-                
+
                 <div className="relative h-64 md:h-80">
-                  <div 
+                  <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url(${project.image})` }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
-                  
+
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                     <span className="inline-block px-3 py-1 bg-primary-600 rounded-full text-xs font-medium mb-2">
                       {project.category}
@@ -253,7 +277,7 @@ const PortfolioPage: React.FC = () => {
                     </h3>
                   </div>
                 </div>
-                
+
                 <div className="p-6 md:p-8">
                   <div className="flex flex-wrap items-center text-gray-500 text-sm mb-6">
                     <div className="flex items-center mr-6 mb-2">
@@ -265,20 +289,20 @@ const PortfolioPage: React.FC = () => {
                       <span>{project.completionDate}</span>
                     </div>
                   </div>
-                  
+
                   <h4 className="text-lg font-semibold text-gray-900 mb-3">Project Overview</h4>
                   <p className="text-gray-600 mb-6">
                     {project.description}
                   </p>
-                  
+
                   <h4 className="text-lg font-semibold text-gray-900 mb-3">Before & After</h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                     <div>
                       <p className="text-sm font-medium text-gray-500 mb-2">Before</p>
                       <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                        <img 
-                          src={project.beforeImage} 
-                          alt={`Before - ${project.title}`} 
+                        <img
+                          src={project.beforeImage}
+                          alt={`Before renovation - ${project.title} by Kent Building & Construction in ${project.location}`}
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -286,18 +310,18 @@ const PortfolioPage: React.FC = () => {
                     <div>
                       <p className="text-sm font-medium text-gray-500 mb-2">After</p>
                       <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                        <img 
-                          src={project.image} 
-                          alt={`After - ${project.title}`} 
+                        <img
+                          src={project.image}
+                          alt={`After completion - ${project.title} by Kent Building & Construction in ${project.location}`}
                           className="w-full h-full object-cover"
                         />
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="flex justify-center">
-                    <Link 
-                      to="/contact" 
+                    <Link
+                      to="/contact"
                       className="btn btn-primary"
                       onClick={() => setSelectedProject(null)}
                     >

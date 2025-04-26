@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
-    title: 'New Build Construction',
-    description: 'Custom-built residential and commercial properties designed and constructed to the highest standards.',
-    icon: Building,
+    title: 'Restoring Period and Listed Buildings',
+    description: 'Specialist restoration of listed and period properties, preserving historical features whilst incorporating modern comforts.',
+    icon: Landmark,
     color: 'bg-primary-500 text-white',
   },
   {
@@ -17,28 +17,34 @@ const services = [
     color: 'bg-secondary-500 text-white',
   },
   {
-    title: 'Listed Building Restoration',
-    description: 'Specialist restoration of listed and period properties, preserving historical features with modern techniques.',
-    icon: Landmark,
+    title: 'Extensions',
+    description: 'Expand your living space with beautifully designed and expertly constructed extensions that complement your property.',
+    icon: Building,
     color: 'bg-accent-500 text-white',
   },
   {
-    title: 'Commercial Fit-outs',
-    description: 'Complete fit-out services for commercial spaces, from offices to retail units and hospitality venues.',
+    title: 'Office and Shop Refurbishment',
+    description: 'Complete refurbishment services for commercial spaces, creating functional and impressive environments for your business.',
     icon: Store,
     color: 'bg-gray-700 text-white',
   },
   {
-    title: 'Landscaping & Outdoor Spaces',
-    description: 'Design and construction of beautiful, functional outdoor spaces that complement your property.',
+    title: 'Landscaping and Ground Works',
+    description: 'Design and construction of beautiful, functional outdoor spaces with comprehensive groundwork solutions.',
     icon: Tree,
     color: 'bg-success-500 text-white',
   },
   {
-    title: 'Specialized Trade Services',
-    description: 'Specialist services including certified plumbing, electrical, carpentry, and bricklaying work.',
-    icon: Wrench,
+    title: 'Oast House Restoration and Refurbishments',
+    description: 'Specialised restoration and refurbishment of traditional Kentish oast houses, preserving their unique character.',
+    icon: Landmark,
     color: 'bg-primary-700 text-white',
+  },
+  {
+    title: 'Oak Framed Buildings and Structures',
+    description: 'Bespoke oak framed buildings and structures, combining traditional craftsmanship with modern building techniques.',
+    icon: Wrench,
+    color: 'bg-primary-600 text-white',
   },
 ];
 
@@ -49,7 +55,7 @@ const ServiceCard: React.FC<{
   color: string;
   index: number;
 }> = ({ title, description, icon: Icon, color, index }) => {
-  
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -68,8 +74,8 @@ const ServiceCard: React.FC<{
         <p className="text-gray-600 mb-5 leading-relaxed">
           {description}
         </p>
-        <Link 
-          to="/services" 
+        <Link
+          to="/services"
           className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700"
         >
           Learn More <ChevronRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
@@ -86,7 +92,7 @@ const Services: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="section-title">Our <span className="text-primary-600">Services</span></h2>
           <p className="section-subtitle">
-            We provide a comprehensive range of construction services across Kent, delivered by skilled professionals to the highest standards.
+            We provide a comprehensive range of specialist building services across Kent, delivered by skilled professionals to the highest standards.
           </p>
         </div>
 

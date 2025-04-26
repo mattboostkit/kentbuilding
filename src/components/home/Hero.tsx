@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const slides = [
     {
       image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920',
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 6000);
-    
+
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <div 
+          <div
             className="absolute inset-0 bg-center bg-cover"
             style={{ backgroundImage: `url(${slide.image})` }}
           />
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
       ))}
 
       {/* Content */}
-      <div className="container-custom relative h-full flex flex-col justify-center pt-20">
+      <div className="container-custom relative h-full flex flex-col justify-center pt-36">
         <div className="max-w-3xl">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
             {slides[currentSlide].title} <br />
             <span className="text-primary-400 mt-2 block">{slides[currentSlide].subtitle}</span>
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
           >
             We deliver exceptional building solutions with a focus on quality, reliability, and customer satisfaction for both residential and commercial projects.
           </motion.p>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
             <Link to="/contact" className="btn btn-primary text-base px-7 py-3">
               Get a Quote
             </Link>
-            <Link to="/portfolio" className="btn btn-secondary text-base px-7 py-3">
+            <Link to="/portfolio" className="btn btn-secondary text-white text-base px-7 py-3">
               View Our Projects
             </Link>
           </motion.div>
@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
               <p className="text-gray-300">Projects Completed</p>
             </div>
           </div>
-          
+
           <div className="flex items-center">
             <div className="p-4 rounded-full bg-primary-600/20 mr-5">
               <Clock className="text-primary-400" size={24} />
@@ -113,7 +113,7 @@ const Hero: React.FC = () => {
               <p className="text-gray-300">Industry Experience</p>
             </div>
           </div>
-          
+
           <div className="flex items-center">
             <div className="p-4 rounded-full bg-primary-600/20 mr-5">
               <Award className="text-primary-400" size={24} />
@@ -132,8 +132,8 @@ const Hero: React.FC = () => {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-all ${
-                index === currentSlide 
-                  ? 'bg-primary-500 w-10' 
+                index === currentSlide
+                  ? 'bg-primary-500 w-10'
                   : 'bg-white/50 hover:bg-white/80'
               }`}
               aria-label={`Go to slide ${index + 1}`}

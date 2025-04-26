@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
-  Send, 
-  CheckCircle, 
-  AlertCircle 
+import { Link } from 'react-router-dom';
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Send,
+  CheckCircle,
+  AlertCircle
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const ContactBanner: React.FC = () => {
   return (
-    <section className="bg-primary-600 text-white py-28 relative">
+    <section className="bg-primary-600 text-white pt-48 pb-28 relative">
       <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
@@ -40,10 +41,10 @@ const ContactPage: React.FC = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
-  
+
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     try {
       // In a real application, you would send the data to your server here
@@ -60,16 +61,22 @@ const ContactPage: React.FC = () => {
   useEffect(() => {
     // Update document title
     document.title = 'Contact Us | Kent Building & Construction';
-    
+
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Contact Kent Building & Construction for all your building needs. Request a free quote for period property restoration, home renovations, extensions, and more. Call 07766 141 811.');
+    }
+
     // Scroll to top on page load
     window.scrollTo(0, 0);
-    
+
     // Reset status after 5 seconds
     if (submitStatus) {
       const timer = setTimeout(() => {
         setSubmitStatus(null);
       }, 5000);
-      
+
       return () => clearTimeout(timer);
     }
   }, [submitStatus]);
@@ -77,7 +84,25 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <ContactBanner />
-      
+
+      <nav className="bg-gray-100 py-3" aria-label="Breadcrumb">
+        <div className="container-custom">
+          <ol className="flex flex-wrap items-center text-sm" itemScope itemType="https://schema.org/BreadcrumbList">
+            <li className="flex items-center" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <Link to="/" className="text-gray-500 hover:text-primary-600" itemProp="item">
+                <span itemProp="name">Home</span>
+              </Link>
+              <meta itemProp="position" content="1" />
+              <span className="mx-2 text-gray-400">/</span>
+            </li>
+            <li className="flex items-center" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <span className="text-gray-700 font-medium" itemProp="name">Contact</span>
+              <meta itemProp="position" content="2" />
+            </li>
+          </ol>
+        </div>
+      </nav>
+
       <section className="py-16">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -91,7 +116,7 @@ const ContactPage: React.FC = () => {
               <p className="text-gray-600 mb-8">
                 We're here to answer any questions you may have about our construction services. Complete the form and a member of our team will be in touch with you shortly.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mr-4 flex-shrink-0">
@@ -99,30 +124,30 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">Phone</h4>
-                    <a 
-                      href="tel:07766141811" 
+                    <a
+                      href="tel:07766141811"
                       className="text-gray-600 hover:text-primary-600 transition-colors"
                     >
                       07766 141 811
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mr-4 flex-shrink-0">
                     <Mail className="text-primary-600" size={20} />
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">Email</h4>
-                    <a 
-                      href="mailto:info@kentconstruction.co.uk" 
+                    <a
+                      href="mailto:info@kentconstruction.co.uk"
                       className="text-gray-600 hover:text-primary-600 transition-colors"
                     >
                       info@kentconstruction.co.uk
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mr-4 flex-shrink-0">
                     <MapPin className="text-primary-600" size={20} />
@@ -136,7 +161,7 @@ const ContactPage: React.FC = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mr-4 flex-shrink-0">
                     <Clock className="text-primary-600" size={20} />
@@ -149,7 +174,7 @@ const ContactPage: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-8">
                 <h4 className="text-lg font-semibold text-gray-900 mb-4">Service Areas</h4>
                 <p className="text-gray-600 mb-2">
@@ -169,7 +194,7 @@ const ContactPage: React.FC = () => {
                 </div>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -178,7 +203,7 @@ const ContactPage: React.FC = () => {
             >
               <div className="bg-white rounded-lg shadow-custom-lg p-8 border border-gray-200">
                 <h3 className="text-2xl font-bold mb-6">Request a Free Quote</h3>
-                
+
                 {submitStatus === 'success' && (
                   <div className="mb-6 p-4 bg-success-50 text-success-700 rounded-md flex items-start">
                     <CheckCircle className="mr-3 flex-shrink-0 mt-0.5" size={20} />
@@ -187,7 +212,7 @@ const ContactPage: React.FC = () => {
                     </p>
                   </div>
                 )}
-                
+
                 {submitStatus === 'error' && (
                   <div className="mb-6 p-4 bg-error-50 text-error-700 rounded-md flex items-start">
                     <AlertCircle className="mr-3 flex-shrink-0 mt-0.5" size={20} />
@@ -196,7 +221,7 @@ const ContactPage: React.FC = () => {
                     </p>
                   </div>
                 )}
-                
+
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <div>
@@ -232,7 +257,7 @@ const ContactPage: React.FC = () => {
                       )}
                     </div>
                   </div>
-                  
+
                   <div className="mb-4">
                     <label htmlFor="email" className="block text-gray-700 font-medium mb-1">
                       Email Address*
@@ -243,7 +268,7 @@ const ContactPage: React.FC = () => {
                       className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 ${
                         errors.email ? 'border-error-500' : 'border-gray-300'
                       }`}
-                      {...register('email', { 
+                      {...register('email', {
                         required: 'Email is required',
                         pattern: {
                           value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -255,7 +280,7 @@ const ContactPage: React.FC = () => {
                       <p className="text-error-600 text-sm mt-1">{errors.email.message}</p>
                     )}
                   </div>
-                  
+
                   <div className="mb-4">
                     <label htmlFor="phone" className="block text-gray-700 font-medium mb-1">
                       Phone Number*
@@ -272,7 +297,7 @@ const ContactPage: React.FC = () => {
                       <p className="text-error-600 text-sm mt-1">{errors.phone.message}</p>
                     )}
                   </div>
-                  
+
                   <div className="mb-4">
                     <label htmlFor="projectType" className="block text-gray-700 font-medium mb-1">
                       Project Type*
@@ -285,19 +310,20 @@ const ContactPage: React.FC = () => {
                       {...register('projectType', { required: 'Please select a project type' })}
                     >
                       <option value="">Select Project Type</option>
-                      <option value="new-build">New Build Construction</option>
-                      <option value="renovation">Home Renovation</option>
-                      <option value="restoration">Listed Building Restoration</option>
-                      <option value="commercial">Commercial Fit-out</option>
-                      <option value="landscaping">Landscaping</option>
-                      <option value="specialized">Specialized Trade Services</option>
+                      <option value="period-listed">Period and Listed Building Restoration</option>
+                      <option value="renovation">Home Renovation & Refurbishment</option>
+                      <option value="extensions">Extensions</option>
+                      <option value="commercial">Office and Shop Refurbishment</option>
+                      <option value="landscaping">Landscaping and Ground Works</option>
+                      <option value="oast-house">Oast House Restoration</option>
+                      <option value="oak-framed">Oak Framed Buildings</option>
                       <option value="other">Other</option>
                     </select>
                     {errors.projectType && (
                       <p className="text-error-600 text-sm mt-1">{errors.projectType.message}</p>
                     )}
                   </div>
-                  
+
                   <div className="mb-6">
                     <label htmlFor="message" className="block text-gray-700 font-medium mb-1">
                       Project Details
@@ -315,7 +341,7 @@ const ContactPage: React.FC = () => {
                       <p className="text-error-600 text-sm mt-1">{errors.message.message}</p>
                     )}
                   </div>
-                  
+
                   <button
                     type="submit"
                     className="w-full btn btn-primary flex justify-center items-center"
@@ -336,7 +362,7 @@ const ContactPage: React.FC = () => {
                       </>
                     )}
                   </button>
-                  
+
                   <p className="text-gray-500 text-sm mt-4">
                     By submitting this form, you agree to our privacy policy. We'll respond to your inquiry within 24 hours.
                   </p>
@@ -355,7 +381,7 @@ const ContactPage: React.FC = () => {
               Visit our office to discuss your project in person.
             </p>
           </div>
-          
+
           <div className="bg-white rounded-lg shadow-custom-lg overflow-hidden">
             <div className="h-96 w-full">
               {/* Google Map would be embedded here in a real application */}
@@ -365,7 +391,7 @@ const ContactPage: React.FC = () => {
                 </p>
               </div>
             </div>
-            
+
             <div className="p-6 bg-white">
               <div className="flex flex-wrap md:flex-nowrap justify-between items-center">
                 <div className="mb-4 md:mb-0">
@@ -374,18 +400,18 @@ const ContactPage: React.FC = () => {
                     Maple Barn Beeches Farm Rd, Uckfield, East Sussex TN22 5QD
                   </p>
                 </div>
-                
+
                 <div className="flex space-x-4">
-                  <a 
-                    href="https://maps.google.com" 
-                    target="_blank" 
+                  <a
+                    href="https://maps.google.com"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary"
                   >
                     Get Directions
                   </a>
-                  <a 
-                    href="tel:07766141811" 
+                  <a
+                    href="tel:07766141811"
                     className="btn btn-secondary flex items-center"
                   >
                     <Phone size={18} className="mr-2" />

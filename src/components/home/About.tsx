@@ -27,16 +27,16 @@ const About: React.FC = () => {
             className="relative"
           >
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-custom-lg">
-              <img 
-                src="https://images.pexels.com/photos/7108116/pexels-photo-7108116.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-                alt="Kent Building & Construction team" 
+              <img
+                src="https://images.pexels.com/photos/7108116/pexels-photo-7108116.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Kent Building & Construction team"
                 className="object-cover w-full h-full"
               />
             </div>
             <div className="absolute -bottom-12 -right-12 z-10 bg-white p-8 rounded-lg shadow-custom max-w-xs">
               <div className="flex items-center mb-5">
                 <div className="w-14 h-14 rounded-full bg-primary-600 flex items-center justify-center mr-5">
-                  <span className="text-white font-bold text-xl">15</span>
+                  <span className="text-white font-bold text-xl">20+</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 text-lg">Years Experience</h4>
@@ -62,21 +62,21 @@ const About: React.FC = () => {
             viewport={{ once: true, margin: "-100px" }}
           >
             <h2 className="section-title">About <span className="text-primary-600">Kent Building & Construction</span></h2>
-            <p className="section-subtitle">Crafting exceptional spaces since 2008</p>
-            
+            <p className="section-subtitle">Crafting exceptional spaces with over 20 years of experience</p>
+
             <div className="mt-8 text-gray-600 space-y-5 leading-relaxed">
               <p>
-                Kent Building & Construction is a family-owned business with over 15 years of experience delivering high-quality construction projects across Kent and the South East.
+                My name is Spencer Ellis and I am the proud owner of Kent Building and Construction ltd. At Kent Building and Construction, we have over 20 years of experience and offer only the very highest possible quality at the most affordable pricing.
               </p>
               <p>
-                We pride ourselves on our attention to detail, exceptional customer service, and commitment to delivering projects on time and within budget. Our team of skilled professionals is passionate about turning your vision into reality.
+                As home owners with families ourselves we appreciate how daunting the thought of builders in your home or business can be and respect your property and care for your project as much as you do yourself. We offer only the highest possible quality of workmanship and would be delighted to show you any number of examples of this should you wish to join us to inspect any of our previous projects.
               </p>
             </div>
 
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
               {advantages.map((advantage, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="flex items-center"
                 >
                   <div className="w-7 h-7 rounded-full bg-primary-100 flex items-center justify-center mr-3 flex-shrink-0">

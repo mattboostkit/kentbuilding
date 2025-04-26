@@ -42,23 +42,20 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header 
+    <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'
       }`}
     >
       <nav className="container-custom flex justify-between items-center">
         <div className="flex items-center">
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="flex items-center"
           >
             <div className="font-heading font-bold tracking-tight">
               <span className={`text-2xl md:text-3xl ${scrolled ? 'text-primary-600' : 'text-white'}`}>
-                Kent Building
-              </span>
-              <span className={`ml-2 text-xl md:text-2xl ${scrolled ? 'text-gray-800' : 'text-white'}`}>
-                & Construction
+                Kent Building & Construction
               </span>
             </div>
           </Link>
@@ -72,7 +69,9 @@ const Navbar: React.FC = () => {
               to={link.path}
               className={`${
                 isActive(link.path)
-                  ? 'font-semibold text-primary-600'
+                  ? scrolled 
+                    ? 'font-semibold text-primary-600' 
+                    : 'font-semibold text-white underline decoration-2 underline-offset-4'
                   : scrolled
                   ? 'text-gray-700 hover:text-primary-600'
                   : 'text-white hover:text-primary-100'
@@ -81,9 +80,9 @@ const Navbar: React.FC = () => {
               {link.name}
             </Link>
           ))}
-          
-          <a 
-            href="tel:07766141811" 
+
+          <a
+            href="tel:07766141811"
             className="btn btn-primary flex items-center ml-3 text-sm px-5 py-2.5"
           >
             <Phone size={16} className="mr-2" />
@@ -93,7 +92,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile menu button */}
         <div className="md:hidden flex items-center">
-          <button 
+          <button
             onClick={toggleMenu}
             aria-label={isOpen ? "Close menu" : "Open menu"}
             className={`p-2 ${scrolled ? 'text-gray-800' : 'text-white'}`}
@@ -104,14 +103,14 @@ const Navbar: React.FC = () => {
       </nav>
 
       {/* Mobile Navigation */}
-      <div 
+      <div
         className={`fixed inset-0 z-40 bg-white transform ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-transform duration-300 ease-in-out md:hidden`}
         style={{ top: '0', height: '100vh' }}
       >
         <div className="flex justify-end p-6">
-          <button 
+          <button
             onClick={toggleMenu}
             aria-label="Close menu"
             className="p-2 text-gray-800"
@@ -122,8 +121,7 @@ const Navbar: React.FC = () => {
         <div className="flex flex-col h-full px-10 pt-8 pb-16">
           <div className="mb-10">
             <div className="font-heading font-bold tracking-tight">
-              <span className="text-2xl text-primary-600">Kent Building</span>
-              <span className="ml-2 text-xl text-gray-800">& Construction</span>
+              <span className="text-2xl text-primary-600">Kent Building & Construction</span>
             </div>
           </div>
           <div className="flex-1">
@@ -143,8 +141,8 @@ const Navbar: React.FC = () => {
             ))}
           </div>
           <div className="mt-auto">
-            <a 
-              href="tel:07766141811" 
+            <a
+              href="tel:07766141811"
               className="btn btn-primary w-full justify-center flex items-center py-3.5"
             >
               <Phone size={18} className="mr-2" />

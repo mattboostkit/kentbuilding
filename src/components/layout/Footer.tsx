@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Facebook, 
-  Instagram, 
-  Linkedin, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Facebook,
+  Instagram,
+  Linkedin,
   ArrowRight
 } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container-custom py-16 md:py-20">
@@ -21,11 +21,10 @@ const Footer: React.FC = () => {
           <div className="space-y-5">
             <Link to="/" className="inline-block">
               <div className="font-heading font-bold tracking-tight">
-                <span className="text-3xl text-primary-400">Kent Building</span>
-                <span className="ml-2 text-2xl text-white">& Construction</span>
+                <span className="text-3xl text-primary-400">Kent Building & Construction</span>
               </div>
             </Link>
-            
+
             <p className="mt-5 text-gray-400 leading-relaxed">
               Building Excellence across Kent since 2008. Quality craftsmanship and exceptional service for every project.
             </p>
@@ -54,8 +53,8 @@ const Footer: React.FC = () => {
                 { name: 'Get a Quote', path: '/contact' },
               ].map((link) => (
                 <li key={link.name}>
-                  <Link 
-                    to={link.path} 
+                  <Link
+                    to={link.path}
                     className="text-gray-400 hover:text-primary-400 transition-colors flex items-center"
                   >
                     <ArrowRight size={16} className="mr-3" />
@@ -71,16 +70,17 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-6">Our Services</h3>
             <ul className="space-y-4">
               {[
-                'New Build Construction',
-                'Home Renovation',
-                'Listed Building Restoration',
-                'Commercial Fit-outs',
-                'Landscaping',
-                'Specialized Trade Services',
+                'Restoring Period and Listed Buildings',
+                'Home Renovation & Refurbishment',
+                'Extensions',
+                'Office and Shop Refurbishment',
+                'Landscaping and Ground Works',
+                'Oast House Restoration',
+                'Oak Framed Buildings',
               ].map((service) => (
                 <li key={service}>
-                  <Link 
-                    to="/services" 
+                  <Link
+                    to={`/services#${service.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and')}`}
                     className="text-gray-400 hover:text-primary-400 transition-colors flex items-center"
                   >
                     <ArrowRight size={16} className="mr-3" />
@@ -103,8 +103,8 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex">
                 <Phone className="mr-4 text-primary-400 flex-shrink-0" size={20} />
-                <a 
-                  href="tel:07766141811" 
+                <a
+                  href="tel:07766141811"
                   className="text-gray-400 hover:text-primary-400 transition-colors"
                 >
                   07766 141 811
@@ -112,8 +112,8 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex">
                 <Mail className="mr-4 text-primary-400 flex-shrink-0" size={20} />
-                <a 
-                  href="mailto:info@kentbuildingconstruction.co.uk" 
+                <a
+                  href="mailto:info@kentbuildingconstruction.co.uk"
                   className="text-gray-400 hover:text-primary-400 transition-colors"
                 >
                   info@kentbuildingconstruction.co.uk

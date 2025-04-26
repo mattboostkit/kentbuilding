@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Clock, 
-  Users, 
-  Award, 
-  ThumbsUp, 
-  Target, 
+import {
+  Clock,
+  Users,
+  Award,
+  ThumbsUp,
+  Target,
   Heart,
   BadgeCheck
 } from 'lucide-react';
@@ -13,14 +13,14 @@ import { motion } from 'framer-motion';
 
 const AboutBanner: React.FC = () => {
   return (
-    <section className="bg-primary-600 text-white py-28 relative">
+    <section className="bg-primary-600 text-white pt-48 pb-28 relative">
       <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/7108116/pexels-photo-7108116.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-          About <span className="text-primary-300">Kent Construction</span>
+          About <span className="text-primary-300">Kent Building & Construction</span>
         </h1>
         <p className="text-xl text-primary-100 max-w-2xl mx-auto">
-          Building Excellence in Kent and beyond since 2008. Learn about our team, values, and commitment to quality.
+          Building Excellence in Kent and beyond with over 20 years of experience. Learn about our team, values, and commitment to quality.
         </p>
       </div>
     </section>
@@ -76,7 +76,13 @@ const AboutPage: React.FC = () => {
   useEffect(() => {
     // Update document title
     document.title = 'About Us | Kent Building & Construction';
-    
+
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Learn about Spencer Ellis and the Kent Building & Construction team. With over 20 years of experience delivering high-quality building projects across Kent and the South East.');
+    }
+
     // Scroll to top on page load
     window.scrollTo(0, 0);
   }, []);
@@ -84,8 +90,26 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <AboutBanner />
-      
-      <section className="py-16">
+
+      <nav className="bg-gray-100 py-3" aria-label="Breadcrumb">
+        <div className="container-custom">
+          <ol className="flex flex-wrap items-center text-sm" itemScope itemType="https://schema.org/BreadcrumbList">
+            <li className="flex items-center" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <Link to="/" className="text-gray-500 hover:text-primary-600" itemProp="item">
+                <span itemProp="name">Home</span>
+              </Link>
+              <meta itemProp="position" content="1" />
+              <span className="mx-2 text-gray-400">/</span>
+            </li>
+            <li className="flex items-center" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <span className="text-gray-700 font-medium" itemProp="name">About Us</span>
+              <meta itemProp="position" content="2" />
+            </li>
+          </ol>
+        </div>
+      </nav>
+
+      <section className="py-16" id="about-story" aria-labelledby="about-story-heading">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -94,23 +118,20 @@ const AboutPage: React.FC = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true, margin: "-100px" }}
             >
-              <h2 className="section-title">Our <span className="text-primary-600">Story</span></h2>
+              <h2 id="about-story-heading" className="section-title">Our <span className="text-primary-600">Story</span></h2>
               <p className="section-subtitle">
-                Building excellence in Kent for over 15 years
+                Building excellence in Kent for over 20 years
               </p>
-              
+
               <div className="mt-6 space-y-4 text-gray-600">
                 <p>
-                  Kent Building & Construction was founded in 2008 by James Kent, a master builder with over 25 years of experience in the construction industry. What began as a small family business has grown into a respected construction company serving clients across Kent and the South East.
+                  My name is Spencer Ellis and I am the proud owner of Kent Building and Construction ltd. At Kent Building and Construction, we have over 20 years of experience and offer only the very highest possible quality at the most affordable pricing.
                 </p>
                 <p>
-                  Our journey has been driven by a simple philosophy: deliver exceptional quality, maintain absolute integrity, and always put the customer first. This approach has earned us a reputation for excellence and helped us build lasting relationships with our clients, many of whom return to us for multiple projects.
+                  As home owners with families ourselves we appreciate how daunting the thought of builders in your home or business can be and respect your property and care for your project as much as you do yourself. We offer only the highest possible quality of workmanship and would be delighted to show you any number of examples of this should you wish to join us to inspect any of our previous projects.
                 </p>
                 <p>
-                  Today, we employ a team of skilled professionals across various construction disciplines, allowing us to offer a comprehensive range of services from new builds and renovations to specialized restoration work and commercial developments.
-                </p>
-                <p>
-                  Despite our growth, we've maintained the personal touch and attention to detail that set us apart. Every project, regardless of size, receives the same level of care and commitment to quality that has been our hallmark since day one.
+                  No member of our team has less than 10 years experience and all are qualified in various aspects of the trade. I and my team pride ourselves on doing all we can to ensure minimal disruption whilst endeavoring to honour the promised completion date without compromising quality, keep the ticks and the points.
                 </p>
               </div>
 
@@ -120,11 +141,11 @@ const AboutPage: React.FC = () => {
                     <Clock className="text-primary-600" size={24} />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-gray-900">15+ Years</p>
+                    <p className="text-2xl font-bold text-gray-900">20+ Years</p>
                     <p className="text-gray-600">In Business</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mr-4">
                     <Users className="text-primary-600" size={24} />
@@ -134,7 +155,7 @@ const AboutPage: React.FC = () => {
                     <p className="text-gray-600">Skilled Professionals</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mr-4">
                     <Award className="text-primary-600" size={24} />
@@ -146,7 +167,7 @@ const AboutPage: React.FC = () => {
                 </div>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -156,16 +177,16 @@ const AboutPage: React.FC = () => {
             >
               <div className="grid grid-cols-2 gap-4">
                 <div className="aspect-[3/4]">
-                  <img 
-                    src="https://images.pexels.com/photos/6474475/pexels-photo-6474475.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                    alt="Team at work" 
+                  <img
+                    src="https://images.pexels.com/photos/6474475/pexels-photo-6474475.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Team at work"
                     className="w-full h-full object-cover rounded-lg shadow-md"
                   />
                 </div>
                 <div className="aspect-[3/4] mt-8">
-                  <img 
-                    src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                    alt="Construction work" 
+                  <img
+                    src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Construction work"
                     className="w-full h-full object-cover rounded-lg shadow-md"
                   />
                 </div>
@@ -184,10 +205,10 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50" id="our-values" aria-labelledby="values-heading">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="section-title">Our <span className="text-primary-600">Values</span></h2>
+            <h2 id="values-heading" className="section-title">Our <span className="text-primary-600">Values</span></h2>
             <p className="section-subtitle">
               The core principles that guide our work and relationships with our clients, partners, and team members.
             </p>
@@ -214,10 +235,10 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16" id="our-team" aria-labelledby="team-heading">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="section-title">Meet Our <span className="text-primary-600">Team</span></h2>
+            <h2 id="team-heading" className="section-title">Meet Our <span className="text-primary-600">Team</span></h2>
             <p className="section-subtitle">
               Our experienced professionals are dedicated to delivering exceptional quality and service on every project.
             </p>
@@ -234,9 +255,9 @@ const AboutPage: React.FC = () => {
                 className="bg-white rounded-lg shadow-custom overflow-hidden"
               >
                 <div className="aspect-square">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
+                  <img
+                    src={member.image}
+                    alt={member.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
