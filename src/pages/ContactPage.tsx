@@ -15,9 +15,9 @@ import { motion } from 'framer-motion';
 const ContactBanner: React.FC = () => {
   return (
     <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
-        <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+        <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           Contact <span className="text-primary-300">Us</span>
         </h1>
         <p className="text-xl text-primary-100 max-w-2xl mx-auto">
@@ -47,6 +47,7 @@ const ContactPage: React.FC = () => {
 
     // Simulate form submission
     try {
+      console.log('Form data:', data);
       // In a real application, you would send the data to your server here
       await new Promise(resolve => setTimeout(resolve, 1500));
       setSubmitStatus('success');

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Ruler, Clock, Award } from 'lucide-react';
+import { Ruler, Clock, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
@@ -8,17 +8,17 @@ const Hero: React.FC = () => {
 
   const slides = [
     {
-      image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
       title: 'Building Excellence',
       subtitle: 'across Kent since 2008',
     },
     {
-      image: 'https://images.pexels.com/photos/2883006/pexels-photo-2883006.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
       title: 'Quality Craftsmanship',
       subtitle: 'built to last generations',
     },
     {
-      image: 'https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&w=1920',
+      image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
       title: 'Exceptional Service',
       subtitle: 'from consultation to completion',
     },

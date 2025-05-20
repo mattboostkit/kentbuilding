@@ -11,9 +11,9 @@ const projects = [
     title: 'Luxury Home Extension',
     category: 'Residential',
     location: 'Canterbury, Kent',
-    completionDate: 'January 2023',
-    image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    beforeImage: 'https://images.pexels.com/photos/7031714/pexels-photo-7031714.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    completionDate: 'March 2025',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
     description: 'A stunning two-story extension to a period property, adding a modern kitchen, family room, and master bedroom suite while respecting the original architectural details.',
   },
   {
@@ -21,9 +21,9 @@ const projects = [
     title: 'Retail Space Conversion',
     category: 'Commercial',
     location: 'Maidstone, Kent',
-    completionDate: 'March 2023',
-    image: 'https://images.pexels.com/photos/3955054/pexels-photo-3955054.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    beforeImage: 'https://images.pexels.com/photos/8186243/pexels-photo-8186243.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    completionDate: 'December 2024',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
     description: 'Conversion of a former warehouse into a contemporary retail space with custom display units, energy-efficient lighting, and a welcoming customer experience area.',
   },
   {
@@ -31,9 +31,9 @@ const projects = [
     title: 'Historic Cottage Renovation',
     category: 'Restoration',
     location: 'Tunbridge Wells, Kent',
-    completionDate: 'November 2022',
-    image: 'https://images.pexels.com/photos/2775518/pexels-photo-2775518.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    beforeImage: 'https://images.pexels.com/photos/9034740/pexels-photo-9034740.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    completionDate: 'October 2023',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
     description: 'Sympathetic restoration of a Grade II listed cottage, preserving original features while integrating modern amenities and resolving structural issues.',
   },
   {
@@ -42,8 +42,8 @@ const projects = [
     category: 'Landscaping',
     location: 'Sevenoaks, Kent',
     completionDate: 'May 2023',
-    image: 'https://images.pexels.com/photos/2042509/pexels-photo-2042509.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    beforeImage: 'https://images.pexels.com/photos/4857779/pexels-photo-4857779.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
     description: 'Complete garden transformation featuring a contemporary outdoor kitchen, custom decking, water feature, and low-maintenance planting scheme.',
   },
   {
@@ -52,8 +52,8 @@ const projects = [
     category: 'Commercial',
     location: 'Ashford, Kent',
     completionDate: 'February 2023',
-    image: 'https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    beforeImage: 'https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
     description: 'Comprehensive refurbishment of a three-story office building, including new HVAC systems, energy-efficient lighting, and modern workspace layouts.',
   },
   {
@@ -62,8 +62,8 @@ const projects = [
     category: 'Residential',
     location: 'Whitstable, Kent',
     completionDate: 'April 2023',
-    image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    beforeImage: 'https://images.pexels.com/photos/2539462/pexels-photo-2539462.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
     description: 'Design and construction of a modern 4-bedroom family home featuring open-plan living spaces, high-efficiency insulation, and sustainable technologies.',
   },
   {
@@ -72,8 +72,8 @@ const projects = [
     category: 'Renovation',
     location: 'Rochester, Kent',
     completionDate: 'December 2022',
-    image: 'https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    beforeImage: 'https://images.pexels.com/photos/1668860/pexels-photo-1668860.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
     description: 'Complete renovation of a Victorian terrace house, including side return extension, basement conversion, and restoration of original features.',
   },
   {
@@ -82,8 +82,8 @@ const projects = [
     category: 'Commercial',
     location: 'Folkestone, Kent',
     completionDate: 'June 2023',
-    image: 'https://images.pexels.com/photos/2544829/pexels-photo-2544829.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    beforeImage: 'https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
     description: 'Design and installation of a commercial kitchen for a busy restaurant, including custom stainless steel units, ventilation systems, and regulatory compliance.',
   },
 ];
@@ -91,9 +91,9 @@ const projects = [
 const PortfolioBanner: React.FC = () => {
   return (
     <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
-        <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+        <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           Our <span className="text-primary-300">Portfolio</span>
         </h1>
         <p className="text-xl text-primary-100 max-w-2xl mx-auto">

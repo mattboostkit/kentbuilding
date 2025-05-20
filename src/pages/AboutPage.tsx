@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Clock,
-  Users,
   Award,
   ThumbsUp,
   Target,
@@ -14,9 +13,9 @@ import { motion } from 'framer-motion';
 const AboutBanner: React.FC = () => {
   return (
     <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/7108116/pexels-photo-7108116.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
-        <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+        <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           About <span className="text-primary-300">Kent Building & Construction</span>
         </h1>
         <p className="text-xl text-primary-100 max-w-2xl mx-auto">
@@ -29,28 +28,16 @@ const AboutBanner: React.FC = () => {
 
 const teamMembers = [
   {
-    name: 'James Kent',
-    role: 'Managing Director',
-    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
-    bio: 'With over 25 years in construction, James founded Kent Construction with a vision to deliver exceptional quality and service across Kent.',
+    name: 'Spencer Ellis',
+    role: 'Founder',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    bio: 'With over 20 years of experience, Spencer founded Kent Building & Construction with a vision to deliver exceptional quality and service across Kent.',
   },
   {
-    name: 'Sarah Williams',
+    name: 'John Smith',
     role: 'Operations Director',
-    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
-    bio: 'Sarah oversees all project operations, ensuring every build is delivered to the highest standards, on time and within budget.',
-  },
-  {
-    name: 'Robert Thompson',
-    role: 'Technical Director',
-    image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400',
-    bio: 'With expertise in structural engineering, Robert ensures all technical aspects of our projects are implemented correctly and safely.',
-  },
-  {
-    name: 'Emma Clark',
-    role: 'Design Consultant',
-    image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400',
-    bio: 'Emma works with clients to translate their vision into practical designs, combining aesthetics with functionality.',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    bio: 'John oversees all project operations, ensuring every build is delivered to the highest standards, on time and within budget.',
   },
 ];
 
@@ -148,16 +135,6 @@ const AboutPage: React.FC = () => {
 
                 <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mr-4">
-                    <Users className="text-primary-600" size={24} />
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-gray-900">25+ Team</p>
-                    <p className="text-gray-600">Skilled Professionals</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center">
-                  <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mr-4">
                     <Award className="text-primary-600" size={24} />
                   </div>
                   <div>
@@ -178,14 +155,14 @@ const AboutPage: React.FC = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="aspect-[3/4]">
                   <img
-                    src="https://images.pexels.com/photos/6474475/pexels-photo-6474475.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    src="https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066"
                     alt="Team at work"
                     className="w-full h-full object-cover rounded-lg shadow-md"
                   />
                 </div>
                 <div className="aspect-[3/4] mt-8">
                   <img
-                    src="https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    src="https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066"
                     alt="Construction work"
                     className="w-full h-full object-cover rounded-lg shadow-md"
                   />
@@ -273,7 +250,7 @@ const AboutPage: React.FC = () => {
       </section>
 
       <section className="py-16 bg-primary-600 relative">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066')] bg-cover bg-center opacity-10"></div>
         <div className="container-custom relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="section-title text-white">Ready to Start Your <span className="text-primary-200">Project?</span></h2>

@@ -28,7 +28,7 @@ const About: React.FC = () => {
           >
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-custom-lg">
               <img
-                src="https://images.pexels.com/photos/7108116/pexels-photo-7108116.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066"
                 alt="Kent Building & Construction team"
                 className="object-cover w-full h-full"
               />

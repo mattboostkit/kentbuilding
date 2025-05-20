@@ -18,7 +18,7 @@ const services = [
       'Sympathetic modernisation',
     ],
     icon: Landmark,
-    image: 'https://images.pexels.com/photos/2775518/pexels-photo-2775518.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
   },
   {
     id: 'renovation',
@@ -34,7 +34,7 @@ const services = [
       'Interior design services',
     ],
     icon: Home,
-    image: 'https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
   },
   {
     id: 'extensions',
@@ -50,7 +50,7 @@ const services = [
       'Full project management',
     ],
     icon: Building,
-    image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
   },
   {
     id: 'commercial',
@@ -66,7 +66,7 @@ const services = [
       'Minimal business disruption',
     ],
     icon: Store,
-    image: 'https://images.pexels.com/photos/3955054/pexels-photo-3955054.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
   },
   {
     id: 'landscaping',
@@ -82,7 +82,7 @@ const services = [
       'Planting schemes and lawn laying',
     ],
     icon: Tree,
-    image: 'https://images.pexels.com/photos/2042509/pexels-photo-2042509.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
   },
   {
     id: 'oast-house',
@@ -98,7 +98,7 @@ const services = [
       'Conservation-led approach',
     ],
     icon: Landmark,
-    image: 'https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
   },
   {
     id: 'oak-framed',
@@ -114,7 +114,7 @@ const services = [
       'Full construction service',
     ],
     icon: Wrench,
-    image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
   },
 ];
 
@@ -139,9 +139,9 @@ const benefits = [
 const ServiceBanner: React.FC = () => {
   return (
     <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
-        <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+        <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           Our Building <span className="text-primary-300">Services</span>
         </h1>
         <p className="text-xl text-primary-100 max-w-2xl mx-auto">
