@@ -9,42 +9,63 @@ const services = [
     description: 'Specialist restoration of listed and period properties, preserving historical features whilst incorporating modern comforts.',
     icon: Landmark,
     color: 'bg-primary-500 text-white',
+    slug: 'period-listed-buildings',
   },
   {
     title: 'Home Renovation & Refurbishment',
     description: 'Transform your existing property with our comprehensive renovation and refurbishment services.',
     icon: Home,
     color: 'bg-secondary-500 text-white',
+    slug: 'home-renovation',
   },
   {
     title: 'Extensions',
     description: 'Expand your living space with beautifully designed and expertly constructed extensions that complement your property.',
     icon: Building,
     color: 'bg-accent-500 text-white',
+    slug: 'extensions',
   },
   {
     title: 'Office and Shop Refurbishment',
     description: 'Complete refurbishment services for commercial spaces, creating functional and impressive environments for your business.',
     icon: Store,
     color: 'bg-gray-700 text-white',
+    slug: 'office-shop-refurbishment',
   },
   {
     title: 'Landscaping and Ground Works',
     description: 'Design and construction of beautiful, functional outdoor spaces with comprehensive groundwork solutions.',
     icon: Tree,
     color: 'bg-success-500 text-white',
+    slug: 'landscaping-groundworks',
   },
   {
     title: 'Oast House Restoration and Refurbishments',
     description: 'Specialised restoration and refurbishment of traditional Kentish oast houses, preserving their unique character.',
     icon: Landmark,
     color: 'bg-primary-700 text-white',
+    slug: 'oast-house-restoration',
   },
   {
     title: 'Oak Framed Buildings and Structures',
     description: 'Bespoke oak framed buildings and structures, combining traditional craftsmanship with modern building techniques.',
     icon: Wrench,
     color: 'bg-primary-600 text-white',
+    slug: 'oak-framed-buildings',
+  },
+  {
+    title: 'Barn Conversions',
+    description: 'Transform redundant agricultural barns into stunning, functional living or workspaces, combining original rural features with contemporary design and modern energy efficiency standards.',
+    icon: Home, // Using Home icon for Barns
+    color: 'bg-accent-600 text-white', // Example color
+    slug: 'barn-conversions',
+  },
+  {
+    title: 'Eco-Friendly New Builds',
+    description: 'Design and construct environmentally conscious new homes, utilising sustainable materials and energy-efficient technologies to create beautiful, future-proof properties that blend seamlessly with their surroundings.',
+    icon: Tree, 
+    color: 'bg-success-600 text-white', 
+    slug: 'eco-friendly-new-builds',
   },
 ];
 
@@ -54,7 +75,8 @@ const ServiceCard: React.FC<{
   icon: React.ElementType;
   color: string;
   index: number;
-}> = ({ title, description, icon: Icon, color, index }) => {
+  slug: string;
+}> = ({ title, description, icon: Icon, color, index, slug }) => {
 
   return (
     <motion.div
@@ -75,7 +97,7 @@ const ServiceCard: React.FC<{
           {description}
         </p>
         <Link
-          to="/services"
+          to={`/services#${slug}`}
           className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700"
         >
           Learn More <ChevronRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />

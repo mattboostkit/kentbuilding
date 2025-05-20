@@ -88,10 +88,10 @@ const About: React.FC = () => {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-5">
-              <Link to="/about" className="btn btn-primary px-7 py-3">
+              <Link to="/about" className="btn btn-primary px-5 py-2">
                 Learn More About Us
               </Link>
-              <Link to="/contact" className="btn btn-secondary px-7 py-3">
+              <Link to="/contact" className="btn btn-secondary px-5 py-2">
                 Get In Touch <ArrowRight size={18} className="ml-2" />
               </Link>
             </div>

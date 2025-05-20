@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Home as HomeIcon } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const Navbar: React.FC = () => {
+  const logoWhiteUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/Kent%20Building%20&%20Construction_White-cropped.svg?updatedAt=1747751797490";
+  const logoColorUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/Kent%20Building%20&%20Construction-cropped.svg?updatedAt=1747751797864";
+
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
@@ -53,11 +56,11 @@ const Navbar: React.FC = () => {
             to="/"
             className="flex items-center"
           >
-            <div className="font-heading font-bold tracking-tight">
-              <span className={`text-2xl md:text-3xl ${scrolled ? 'text-primary-600' : 'text-white'}`}>
-                Kent Building & Construction
-              </span>
-            </div>
+            <img 
+              src={scrolled ? logoColorUrl : logoWhiteUrl} 
+              alt="Kent Building & Construction Logo" 
+              className="h-20 transition-all duration-300" 
+            />
           </Link>
         </div>
 
@@ -120,9 +123,11 @@ const Navbar: React.FC = () => {
         </div>
         <div className="flex flex-col h-full px-10 pt-8 pb-16">
           <div className="mb-10">
-            <div className="font-heading font-bold tracking-tight">
-              <span className="text-2xl text-primary-600">Kent Building & Construction</span>
-            </div>
+            <img 
+              src={logoColorUrl} 
+              alt="Kent Building & Construction Logo" 
+              className="h-20" 
+            />
           </div>
           <div className="flex-1">
             {navLinks.map((link) => (

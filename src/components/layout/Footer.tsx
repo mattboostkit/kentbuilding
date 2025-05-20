@@ -11,6 +11,8 @@ import {
 } from 'lucide-react';
 
 const Footer: React.FC = () => {
+  const logoWhiteUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/Kent%20Building%20&%20Construction_White-cropped.svg?updatedAt=1747751797490";
+
   const currentYear = new Date().getFullYear();
 
   return (
@@ -20,9 +22,11 @@ const Footer: React.FC = () => {
           {/* Column 1 - Company Info */}
           <div className="space-y-5">
             <Link to="/" className="inline-block">
-              <div className="font-heading font-bold tracking-tight">
-                <span className="text-3xl text-primary-400">Kent Building & Construction</span>
-              </div>
+              <img 
+                src={logoWhiteUrl} 
+                alt="Kent Building & Construction Logo" 
+                className="h-12" 
+              />
             </Link>
 
             <p className="mt-5 text-gray-400 leading-relaxed">
@@ -77,6 +81,8 @@ const Footer: React.FC = () => {
                 'Landscaping and Ground Works',
                 'Oast House Restoration',
                 'Oak Framed Buildings',
+                'Barn Conversions',
+                'Eco-Friendly New Builds',
               ].map((service) => (
                 <li key={service}>
                   <Link
