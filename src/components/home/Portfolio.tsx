@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+
 import { motion } from 'framer-motion';
 
 const categories = ['All', 'Residential', 'Commercial', 'Renovation', 'Landscaping'];
@@ -116,7 +116,7 @@ const Portfolio: React.FC = () => {
 
         <div className="text-center mt-16">
           <Link to="/portfolio" className="btn btn-primary px-7 py-3">
-            View All Projects <ArrowRight size={18} className="ml-2" />
+            View All Projects
           </Link>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Check, ArrowRight } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
@@ -87,12 +87,12 @@ const About: React.FC = () => {
               ))}
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-5">
+            <div className="mt-10 flex flex-wrap gap-5 items-center">
               <Link to="/about" className="btn btn-primary px-5 py-2">
                 Learn More About Us
               </Link>
-              <Link to="/contact" className="btn btn-secondary px-5 py-2">
-                Get In Touch <ArrowRight size={18} className="ml-2" />
+              <Link to="/contact" className="btn bg-white text-primary-600 border border-primary-600 hover:bg-primary-50 hover:border-primary-700 px-5 py-2">
+                Get In Touch
               </Link>
             </div>
           </motion.div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, MapPin, ArrowRight } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const categories = ['All', 'Residential', 'Commercial', 'Renovation', 'Restoration', 'Landscaping'];
@@ -229,7 +229,7 @@ const PortfolioPage: React.FC = () => {
                   </p>
 
                   <button className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700">
-                    View Project Details <ArrowRight size={16} className="ml-1 transition-transform group-hover:translate-x-1" />
+                    View Project Details
                   </button>
                 </div>
               </motion.div>
