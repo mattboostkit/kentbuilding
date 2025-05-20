@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Ruler, Clock, Award } from 'lucide-react';
+import { Ruler, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
@@ -106,21 +106,19 @@ const Hero: React.FC = () => {
 
           <div className="flex items-center">
             <div className="p-4 rounded-full bg-primary-600/20 mr-5">
-              <Clock className="text-primary-400" size={24} />
-            </div>
-            <div>
-              <p className="text-white font-bold text-xl">15+ Years</p>
-              <p className="text-gray-300">Industry Experience</p>
-            </div>
-          </div>
-
-          <div className="flex items-center">
-            <div className="p-4 rounded-full bg-primary-600/20 mr-5">
               <Award className="text-primary-400" size={24} />
             </div>
             <div>
               <p className="text-white font-bold text-xl">100%</p>
               <p className="text-gray-300">Customer Satisfaction</p>
+            </div>
+          </div>
+
+          <div className="flex items-center">
+            <img src="https://ik.imagekit.io/boostkit/Kent%20Building/FMB.svg?updatedAt=1747756996556" alt="FMB Logo" className="h-12 w-auto mr-5" />
+            <div>
+              <p className="text-white font-bold text-xl">FMB Member</p>
+              <p className="text-gray-300">For Over 15 Years</p>
             </div>
           </div>
         </motion.div>

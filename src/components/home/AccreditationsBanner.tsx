@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Shield, BadgeCheck, Hammer, Verified } from 'lucide-react';
+import { Shield, BadgeCheck, Hammer, Verified } from 'lucide-react';
 
 const AccreditationsBanner: React.FC = () => {
   const accreditations = [
     {
-      icon: Award,
+      imageSrc: 'https://ik.imagekit.io/boostkit/Kent%20Building/FMB.svg?updatedAt=1747756996556',
       title: 'Federation of Master Builders',
       description: 'Registered Member #71497',
+      isImage: true,
     },
     {
       icon: Shield,
@@ -52,7 +53,11 @@ const AccreditationsBanner: React.FC = () => {
               className="bg-white p-6 rounded-lg shadow-sm flex flex-col items-center text-center"
             >
               <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mb-3">
+                {item.isImage && item.imageSrc ? (
+                <img src={item.imageSrc} alt={item.title} className="h-8 w-auto" />
+              ) : item.icon ? (
                 <item.icon size={24} className="text-primary-600" />
+              ) : null}
               </div>
               <h4 className="text-base font-semibold text-gray-900 mb-1">{item.title}</h4>
               <p className="text-sm text-gray-600">{item.description}</p>

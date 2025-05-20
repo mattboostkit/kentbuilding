@@ -70,7 +70,8 @@ const Portfolio: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {filteredProjects.map((project, index) => (
-            <motion.div
+            <Link key={`link-${project.id}`} to="/portfolio">
+              <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -100,21 +101,16 @@ const Portfolio: React.FC = () => {
                   <span className="text-sm font-medium px-4 py-1.5 bg-primary-600 rounded-full">
                     {project.category}
                   </span>
-                  <h3 className="text-2xl font-bold mt-3 group-hover:text-primary-300 transition-colors">
+                  <h3 className="text-2xl font-bold mt-3 text-white transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-gray-200 mt-1">{project.location}</p>
                 </div>
                 
-                {hoveredProject === project.id && (
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="px-6 py-3 bg-white/90 text-gray-800 rounded-full text-sm font-medium">
-                      Before & After (Hover to compare)
-                    </span>
-                  </div>
-                )}
+
               </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
         </div>
 

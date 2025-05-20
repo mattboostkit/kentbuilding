@@ -272,7 +272,7 @@ const PortfolioPage: React.FC = () => {
                     <span className="inline-block px-3 py-1 bg-primary-600 rounded-full text-xs font-medium mb-2">
                       {project.category}
                     </span>
-                    <h3 className="text-2xl md:text-3xl font-bold">
+                    <h3 className="text-2xl md:text-3xl font-bold text-white">
                       {project.title}
                     </h3>
                   </div>

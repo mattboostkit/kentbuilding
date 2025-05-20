@@ -135,7 +135,8 @@ const Footer: React.FC = () => {
         {/* Certifications */}
         <div className="border-t border-gray-800 mt-14 pt-10">
           <div className="flex flex-wrap items-center justify-center gap-10">
-            <div className="text-center">
+            <div className="text-center flex flex-col items-center">
+              <img src="https://ik.imagekit.io/boostkit/Kent%20Building/FMB.svg?updatedAt=1747756996556" alt="Federation of Master Builders Logo" className="h-10 mb-2" />
               <p className="text-sm text-gray-500 mb-1">Federation of Master Builders</p>
               <p className="text-sm text-gray-400">Registration No: 71497</p>
             </div>
