@@ -51,8 +51,8 @@ const Hero: React.FC = () => {
       ))}
 
       {/* Content */}
-      <div className="container-custom relative h-full flex flex-col justify-center pt-36">
-        <div className="max-w-3xl mt-6 md:mt-0">
+      <div className="container-custom relative h-full flex flex-col justify-center pt-28 sm:pt-32 md:pt-36">
+        <div className="max-w-3xl">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

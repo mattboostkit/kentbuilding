@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
             <img 
               src={scrolled ? logoColorUrl : logoWhiteUrl} 
               alt="Kent Building & Construction Logo" 
-              className="h-16 md:h-20 transition-all duration-300" 
+              className="h-12 sm:h-16 md:h-20 transition-all duration-300" 
             />
           </Link>
         </div>
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
             <img 
               src={logoColorUrl} 
               alt="Kent Building & Construction Logo" 
-              className="h-20" 
+              className="h-16" 
             />
           </div>
           <div className="flex-1">
