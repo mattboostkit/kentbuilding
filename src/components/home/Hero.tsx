@@ -1,54 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Ruler, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    {
-      image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-      title: 'Building Excellence',
-      subtitle: 'across Kent since 2008',
-    },
-    {
-      image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-      title: 'Quality Craftsmanship',
-      subtitle: 'built to last generations',
-    },
-    {
-      image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-      title: 'Exceptional Service',
-      subtitle: 'from consultation to completion',
-    },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000);
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
+  const staticSlide = {
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    title: 'Building Excellence across Kent since 2008',
+  };
 
   return (
     <section className="relative h-screen min-h-[600px] max-h-[1000px] w-full">
-      {/* Slider */}
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <div
-            className="absolute inset-0 bg-center bg-cover"
-            style={{ backgroundImage: `url(${slide.image})` }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 to-gray-900/60" />
-        </div>
-      ))}
+      {/* Static Background */}
+      <div
+        className="absolute inset-0 bg-center bg-cover"
+        style={{ backgroundImage: `url(${staticSlide.image})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 to-gray-900/60" />
 
       {/* Content */}
       <div className="container-custom relative flex flex-col justify-start">
@@ -60,8 +28,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl md:text-5xl lg:text-6xl text-white font-heading font-bold leading-tight tracking-tight"
           >
-            {slides[currentSlide].title} <br />
-            <span className="text-primary-400 mt-2 block">{slides[currentSlide].subtitle}</span>
+            {staticSlide.title}
           </motion.h1>
 
           <motion.p
@@ -82,7 +49,7 @@ const Hero: React.FC = () => {
             <Link to="/contact" className="btn btn-primary text-base px-7 py-3">
               Get a Quote
             </Link>
-            <Link to="/portfolio" className="btn btn-secondary text-white text-base px-7 py-3">
+            <Link to="/portfolio" className="btn btn-secondary text-white text-base px-7 py-3 hover:bg-primary-500/10">
               View Our Projects
             </Link>
           </motion.div>
@@ -93,7 +60,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-auto mb-20 grid grid-cols-1 md:grid-cols-3 gap-8 bg-white/10 backdrop-blur-sm rounded-lg p-8"
+          className="mt-16 mb-10 md:mb-20 grid grid-cols-1 md:grid-cols-3 gap-8 bg-white/10 backdrop-blur-sm rounded-lg p-8"
         >
           <div className="flex items-center">
             <div className="p-4 rounded-full bg-primary-600/20 mr-5">
@@ -124,21 +91,7 @@ const Hero: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* Slider indicators */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex space-x-3">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                index === currentSlide
-                  ? 'bg-primary-500 w-10'
-                  : 'bg-white/50 hover:bg-white/80'
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
+        {/* Slider indicators removed */}
       </div>
     </section>
   );

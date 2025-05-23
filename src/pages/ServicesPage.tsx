@@ -102,7 +102,7 @@ const services = [
     id: 'kitchens-bathrooms',
     title: 'Kitchens & Bathrooms',
     tagline: 'Beautiful, functional spaces tailored to you',
-    description: 'Create your dream Kitchens & Bathrooms with our bespoke services. We combine style, functionality, and quality craftsmanship to design and install beautiful spaces tailored to your specific needs.',
+    description: 'Create your dream kitchen or bathroom with our bespoke services. We combine style, functionality, and quality craftsmanship to design and install beautiful spaces tailored to your specific needs.',
     features: [
       'Kitchen design and installation',
       'Bathroom remodelling and upgrades',
@@ -316,7 +316,7 @@ const ServicesPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mb-10 md:mb-20 grid grid-cols-1 md:grid-cols-3 gap-8 bg-white/10 backdrop-blur-sm rounded-lg p-8">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={benefit.title}
