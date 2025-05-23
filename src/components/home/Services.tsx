@@ -1,72 +1,58 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Building, Home, Landmark, Store, Trees as Tree, Wrench, ChevronRight } from 'lucide-react';
+import { Building, Home, Landmark, Trees as Tree, Wrench, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const services = [
   {
-    title: 'Restoring Period and Listed Buildings',
-    description: 'Specialist restoration of listed and period properties, preserving historical features whilst incorporating modern comforts.',
+    title: 'Listed & Heritage Buildings',
+    description: 'Preserving character and history with expert care.',
     icon: Landmark,
     color: 'bg-primary-500 text-white',
-    slug: 'period-listed-buildings',
+    slug: 'listed-heritage-buildings',
   },
   {
-    title: 'Home Renovation & Refurbishment',
-    description: 'Transform your existing property with our comprehensive renovation and refurbishment services.',
+    title: 'Restoration & Refurbishments',
+    description: 'Breathe new life into your property with our expert renovation services.',
     icon: Home,
     color: 'bg-secondary-500 text-white',
-    slug: 'home-renovation',
+    slug: 'restoration-refurbishments',
   },
   {
     title: 'Extensions',
-    description: 'Expand your living space with beautifully designed and expertly constructed extensions that complement your property.',
+    description: 'Seamlessly expand your living or working space with our bespoke extension solutions.',
     icon: Building,
     color: 'bg-accent-500 text-white',
     slug: 'extensions',
   },
   {
-    title: 'Office and Shop Refurbishment',
-    description: 'Complete refurbishment services for commercial spaces, creating functional and impressive environments for your business.',
-    icon: Store,
-    color: 'bg-gray-700 text-white',
-    slug: 'office-shop-refurbishment',
-  },
-  {
-    title: 'Landscaping and Ground Works',
-    description: 'Design and construction of beautiful, functional outdoor spaces with comprehensive groundwork solutions.',
-    icon: Tree,
-    color: 'bg-success-500 text-white',
-    slug: 'landscaping-groundworks',
-  },
-  {
-    title: 'Oast House Restoration and Refurbishments',
-    description: 'Specialised restoration and refurbishment of traditional Kentish oast houses, preserving their unique character.',
-    icon: Landmark,
-    color: 'bg-primary-700 text-white',
-    slug: 'oast-house-restoration',
-  },
-  {
-    title: 'Oak Framed Buildings and Structures',
-    description: 'Bespoke oak framed buildings and structures, combining traditional craftsmanship with modern building techniques.',
+    title: 'Structural Repairs',
+    description: 'Safeguarding the integrity of your building with expert structural solutions.',
     icon: Wrench,
+    color: 'bg-gray-700 text-white',
+    slug: 'structural-repairs',
+  },
+  {
+    title: 'New Builds',
+    description: 'Bringing your vision to life from the ground up with modern, energy-efficient construction.',
+    icon: Building,
+    color: 'bg-success-500 text-white',
+    slug: 'new-builds',
+  },
+  {
+    title: 'Hard Landscaping',
+    description: 'Enhancing your outdoor space with durable and beautiful hard landscaping features.',
+    icon: Tree,
+    color: 'bg-primary-700 text-white',
+    slug: 'hard-landscaping',
+  },
+  {
+    title: 'Kitchens & Bathrooms',
+    description: 'Beautiful, functional spaces tailored to your specific needs and style.',
+    icon: Home,
     color: 'bg-primary-600 text-white',
-    slug: 'oak-framed-buildings',
-  },
-  {
-    title: 'Barn Conversions',
-    description: 'Transform redundant agricultural barns into stunning, functional living or workspaces, combining original rural features with contemporary design and modern energy efficiency standards.',
-    icon: Home, // Using Home icon for Barns
-    color: 'bg-accent-600 text-white', // Example color
-    slug: 'barn-conversions',
-  },
-  {
-    title: 'Eco-Friendly New Builds',
-    description: 'Design and construct environmentally conscious new homes, utilising sustainable materials and energy-efficient technologies to create beautiful, future-proof properties that blend seamlessly with their surroundings.',
-    icon: Tree, 
-    color: 'bg-success-600 text-white', 
-    slug: 'eco-friendly-new-builds',
-  },
+    slug: 'kitchens-bathrooms',
+  }
 ];
 
 const ServiceCard: React.FC<{
@@ -90,9 +76,11 @@ const ServiceCard: React.FC<{
         <div className={`w-16 h-16 rounded-lg ${color} flex items-center justify-center mb-6`}>
           <Icon size={32} />
         </div>
-        <h3 className="text-xl font-bold mb-4 group-hover:text-primary-600 transition-colors">
-          {title}
-        </h3>
+        <Link to={`/services#${slug}`} className="text-inherit no-underline">
+          <h3 className="text-xl font-bold mb-4 group-hover:text-primary-600 transition-colors">
+            {title}
+          </h3>
+        </Link>
         <p className="text-gray-600 mb-5 leading-relaxed">
           {description}
         </p>
