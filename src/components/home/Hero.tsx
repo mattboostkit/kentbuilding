@@ -55,42 +55,6 @@ const Hero: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Statistics */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-16 mb-10 md:mb-20 grid grid-cols-1 md:grid-cols-3 gap-8 bg-white/10 backdrop-blur-sm rounded-lg p-8"
-        >
-          <div className="flex items-center">
-            <div className="p-4 rounded-full bg-primary-600/20 mr-5">
-              <Ruler className="text-primary-400" size={24} />
-            </div>
-            <div>
-              <p className="text-white font-bold text-xl">250+</p>
-              <p className="text-gray-300">Projects Completed</p>
-            </div>
-          </div>
-
-          <div className="flex items-center">
-            <div className="p-4 rounded-full bg-primary-600/20 mr-5">
-              <Award className="text-primary-400" size={24} />
-            </div>
-            <div>
-              <p className="text-white font-bold text-xl">100%</p>
-              <p className="text-gray-300">Customer Satisfaction</p>
-            </div>
-          </div>
-
-          <div className="flex items-center">
-            <img src="https://ik.imagekit.io/boostkit/Kent%20Building/FMB.svg?updatedAt=1747756996556" alt="FMB Logo" className="h-12 w-auto mr-5" />
-            <div>
-              <p className="text-white font-bold text-xl">FMB Member</p>
-              <p className="text-gray-300">For Over 15 Years</p>
-            </div>
-          </div>
-        </motion.div>
-
         {/* Slider indicators removed */}
       </div>
     </section>
