@@ -3,88 +3,63 @@ import { Link } from 'react-router-dom';
 import { Calendar, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const categories = ['All', 'Residential', 'Commercial', 'Renovation', 'Restoration', 'Landscaping'];
+const categories = ['All', 'Interior Renovation', 'Landscaping', 'Restoration', 'Leisure & Recreation'];
 
 const projects = [
   {
     id: 1,
-    title: 'Luxury Home Extension',
-    category: 'Residential',
-    location: 'Canterbury, Kent',
-    completionDate: 'March 2025',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    description: 'A stunning two-story extension to a period property, adding a modern kitchen, family room, and master bedroom suite while respecting the original architectural details.',
+    title: 'Contemporary Bathroom Suite',
+    category: 'Interior Renovation',
+    location: 'Maidstone, Kent',
+    completionDate: 'April 2025',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%204.webp?updatedAt=1750336257595',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%206.webp?updatedAt=1750336257609',
+    additionalImages: [
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%205.webp?updatedAt=1750336257699',
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%203.webp?updatedAt=1750336257700'
+    ],
+    description: 'Complete bathroom transformation featuring large format gray porcelain tiles and built-in bathtub with matching tile surround. The project included new plumbing, electrical installation, and window replacement while maximizing natural light and creating a clean, modern aesthetic with neutral tones.',
   },
   {
     id: 2,
-    title: 'Retail Space Conversion',
-    category: 'Commercial',
-    location: 'Maidstone, Kent',
-    completionDate: 'December 2024',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    description: 'Conversion of a former warehouse into a contemporary retail space with custom display units, energy-efficient lighting, and a welcoming customer experience area.',
+    title: 'Multi-Level Sandstone Terrace',
+    category: 'Landscaping',
+    location: 'Canterbury, Kent',
+    completionDate: 'June 2024',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%206.webp?updatedAt=1750336260884',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%205.webp?updatedAt=1750336260805',
+    additionalImages: [
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%202.webp?updatedAt=1750336259973',
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%208.webp?updatedAt=1750336262077'
+    ],
+    description: 'Construction of an expansive natural sandstone patio featuring multiple levels and integrated planters. The project incorporated careful grading for optimal drainage, precision stone cutting for seamless joints, and strategic placement to capture panoramic countryside views while creating distinct entertaining zones.',
   },
   {
     id: 3,
-    title: 'Historic Cottage Renovation',
+    title: 'Period Property Roof Renovation',
     category: 'Restoration',
-    location: 'Tunbridge Wells, Kent',
-    completionDate: 'October 2023',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    description: 'Sympathetic restoration of a Grade II listed cottage, preserving original features while integrating modern amenities and resolving structural issues.',
+    location: 'Ashford, Kent',
+    completionDate: 'November 2024',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2011.webp?updatedAt=1750336255244',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%201.webp?updatedAt=1750336261959',
+    additionalImages: [
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2013.webp?updatedAt=1750336254762',
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2017.webp?updatedAt=1750336257584'
+    ],
+    description: 'Comprehensive roof renovation of a historic timber-framed property, including structural assessment of original oak beams, installation of modern insulation systems, and preservation of traditional construction methods. The project required careful integration of contemporary building standards with heritage conservation requirements.',
   },
   {
     id: 4,
-    title: 'Modern Garden Design',
-    category: 'Landscaping',
-    location: 'Sevenoaks, Kent',
-    completionDate: 'May 2023',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    description: 'Complete garden transformation featuring a contemporary outdoor kitchen, custom decking, water feature, and low-maintenance planting scheme.',
-  },
-  {
-    id: 5,
-    title: 'Office Building Refurbishment',
-    category: 'Commercial',
-    location: 'Ashford, Kent',
-    completionDate: 'February 2023',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    description: 'Comprehensive refurbishment of a three-story office building, including new HVAC systems, energy-efficient lighting, and modern workspace layouts.',
-  },
-  {
-    id: 6,
-    title: 'Contemporary New Build Home',
-    category: 'Residential',
-    location: 'Whitstable, Kent',
-    completionDate: 'April 2023',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    description: 'Design and construction of a modern 4-bedroom family home featuring open-plan living spaces, high-efficiency insulation, and sustainable technologies.',
-  },
-  {
-    id: 7,
-    title: 'Victorian Terrace Renovation',
-    category: 'Renovation',
-    location: 'Rochester, Kent',
-    completionDate: 'December 2022',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    description: 'Complete renovation of a Victorian terrace house, including side return extension, basement conversion, and restoration of original features.',
-  },
-  {
-    id: 8,
-    title: 'Restaurant Kitchen Refit',
-    category: 'Commercial',
-    location: 'Folkestone, Kent',
-    completionDate: 'June 2023',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
-    description: 'Design and installation of a commercial kitchen for a busy restaurant, including custom stainless steel units, ventilation systems, and regulatory compliance.',
+    title: 'Illuminated Swimming Pool',
+    category: 'Leisure & Recreation',
+    location: 'Provence, Northern France',
+    completionDate: 'August 2024',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%201.webp?updatedAt=1750336257578',
+    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%203.webp?updatedAt=1750336257692',
+    additionalImages: [
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%202.webp?updatedAt=1750336257692'
+    ],
+    description: 'Installation of a rectangular swimming pool with integrated LED lighting system and natural stone coping. The project included excavation, waterproofing, filtration systems, and evening lighting design to create a stunning focal point that complements the rural French landscape setting.',
   },
 ];
 
