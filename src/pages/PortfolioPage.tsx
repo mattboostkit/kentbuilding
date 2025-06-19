@@ -81,7 +81,6 @@ const PortfolioBanner: React.FC = () => {
 
 const PortfolioPage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('All');
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   const filteredProjects = activeCategory === 'All'
@@ -152,60 +151,31 @@ const PortfolioPage: React.FC = () => {
                 viewport={{ once: true, margin: "-100px" }}
                 className="card overflow-hidden group cursor-pointer"
                 onClick={() => setSelectedProject(project.id)}
-                onMouseEnter={() => setHoveredProject(project.id)}
-                onMouseLeave={() => setHoveredProject(null)}
               >
                 <div className="relative aspect-[4/3]">
                   <div
-                    className={`absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out ${
-                      hoveredProject === project.id ? 'opacity-0' : 'opacity-100'
-                    }`}
+                    className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url(${project.image})` }}
-                  />
-                  <div
-                    className={`absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out ${
-                      hoveredProject === project.id ? 'opacity-100' : 'opacity-0'
-                    }`}
-                    style={{ backgroundImage: `url(${project.beforeImage})` }}
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-90"></div>
 
-                  {hoveredProject === project.id && (
-                    <div className="absolute top-4 right-4 z-10">
-                      <span className="px-3 py-1 bg-white/90 text-gray-800 rounded-full text-sm font-medium">
-                        Before
-                      </span>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <span className="text-sm font-medium px-3 py-1 bg-primary-600 rounded-full">
+                      {project.category}
+                    </span>
+                    <h3 className="text-xl font-bold mt-3 text-white">
+                      {project.title}
+                    </h3>
+                    <div className="flex items-center mt-2 text-gray-200 text-sm">
+                      <MapPin size={16} className="mr-1" />
+                      {project.location}
                     </div>
-                  )}
-                </div>
-
-                <div className="p-6">
-                  <span className="inline-block px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-xs font-medium mb-3">
-                    {project.category}
-                  </span>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
-                    {project.title}
-                  </h3>
-
-                  <div className="flex items-center text-gray-500 text-sm mb-4">
-                    <div className="flex items-center mr-4">
-                      <MapPin size={14} className="mr-1" />
-                      <span>{project.location}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Calendar size={14} className="mr-1" />
-                      <span>{project.completionDate}</span>
+                    <div className="flex items-center mt-1 text-gray-300 text-sm">
+                      <Calendar size={16} className="mr-1" />
+                      {project.completionDate}
                     </div>
                   </div>
-
-                  <p className="text-gray-600 line-clamp-2 mb-4">
-                    {project.description}
-                  </p>
-
-                  <button className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700">
-                    View Project Details
-                  </button>
                 </div>
               </motion.div>
             ))}

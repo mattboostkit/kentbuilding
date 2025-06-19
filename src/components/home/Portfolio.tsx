@@ -65,7 +65,6 @@ const projects = [
 
 const Portfolio: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('All');
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   const filteredProjects = activeCategory === 'All'
     ? projects
@@ -109,21 +108,11 @@ const Portfolio: React.FC = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true, margin: "-100px" }}
               className="relative group rounded-lg overflow-hidden shadow-md"
-              onMouseEnter={() => setHoveredProject(project.id)}
-              onMouseLeave={() => setHoveredProject(null)}
             >
               <div className="relative h-96">
                 <div 
-                  className={`absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out ${
-                    hoveredProject === project.id ? 'opacity-0' : 'opacity-100'
-                  }`}
+                  className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: `url(${project.image})` }}
-                />
-                <div 
-                  className={`absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out ${
-                    hoveredProject === project.id ? 'opacity-100' : 'opacity-0'
-                  }`}
-                  style={{ backgroundImage: `url(${project.beforeImage})` }}
                 />
                 
                 <div className="absolute inset-0 bg-black bg-opacity-40 transition-opacity group-hover:bg-opacity-60"></div>
