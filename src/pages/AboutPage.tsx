@@ -111,13 +111,31 @@ const AboutPage: React.FC = () => {
 
               <div className="mt-6 space-y-4 text-gray-600">
                 <p>
-                  My name is Spencer Ellis and I am the proud owner of Kent Building and Construction ltd. At Kent Building and Construction, we have over 20 years of experience and offer only the very highest possible quality at the most affordable pricing.
+                  My name is Spencer Ellis and I am the Managing Director of Kent Building and Construction Ltd.
                 </p>
                 <p>
-                  As home owners with families ourselves we appreciate how daunting the thought of builders in your home or business can be and respect your property and care for your project as much as you do yourself. We offer only the highest possible quality of workmanship and would be delighted to show you any number of examples of this should you wish to join us to inspect any of our previous projects.
+                  My passion for precision began when I left my childhood home of New Zealand and moved to Western Australia to work in the mining industry. The apprenticeship I undertook there still plays a part in the way I map out a build today and enables me to see the whole process through – always looking out for any potential pitfalls along the way.
                 </p>
                 <p>
-                  No member of our team has less than 10 years experience and all are qualified in various aspects of the trade. I and my team pride ourselves on doing all we can to ensure minimal disruption whilst endeavoring to honour the promised completion date without compromising quality, keep the ticks and the points.
+                  After spending 5 years travelling to various African, Malaysian and Indonesian locations to build gold and mineral processing plants, I ended up here in the UK. It was then I decided to start up my own business and Kent Building and Construction was born. My limited company grew and grew as our reputation went from strength to strength, and we have now been trading for over 20 years.
+                </p>
+                <p>
+                  We are based in the southeastern corner of England and tend to cover most of Kent and East Sussex. However, as we also have regular clients with portfolios of properties, we are no strangers to building in France, Belgium and beyond.
+                </p>
+                <p>
+                  I am a member of the Federation of Master Builders and have been for 12 years. I also sit on the southern regional board of the FMB. This position enables me and my fellow board members to try and implement and improve the standards of the construction industry as a whole. We are working with the current government, and worked with their predecessors, on a scheme which means builders will need to be regulated in the same way electricians and plumbers are.
+                </p>
+                <p>
+                  You can't buy your way into the FMB – only quality construction companies with verified, above-standard builds are invited.
+                </p>
+                <p>
+                  High standards, accountability and professionalism are at the forefront of my business. It doesn't cost any more to do the job properly.
+                </p>
+                <p>
+                  Finally, if you are a regular listener to BBC radio in the Kent or East Sussex area, you may have heard me talking to various radio hosts on anything building or construction related.
+                </p>
+                <p>
+                  So with that, please have a look through our website and if you have a project, or need some help with your property or business premises, please feel free to contact me and I'll be happy to help.
                 </p>
               </div>
 
