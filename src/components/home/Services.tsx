@@ -1,62 +1,48 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Building, Home, Landmark, Trees as Tree, Wrench, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const services = [
   {
     title: 'Listed & Heritage Buildings',
     description: 'Preserving character and history with expert care.',
-    icon: Landmark,
-    color: 'bg-primary-500 text-white',
     slug: 'listed-heritage-buildings',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2011.webp?updatedAt=1750336255244',
   },
   {
     title: 'Restoration & Refurbishments',
     description: 'Breathe new life into your property with our expert renovation services.',
-    icon: Home,
-    color: 'bg-secondary-500 text-white',
     slug: 'restoration-refurbishments',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%201.webp?updatedAt=1750611791951',
   },
   {
     title: 'Extensions',
     description: 'Seamlessly expand your living or working space with our bespoke extension solutions.',
-    icon: Building,
-    color: 'bg-accent-500 text-white',
     slug: 'extensions',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions%201.webp?updatedAt=1750611827374',
   },
   {
     title: 'Structural Repairs',
     description: 'Safeguarding the integrity of your building with expert structural solutions.',
-    icon: Wrench,
-    color: 'bg-gray-700 text-white',
     slug: 'structural-repairs',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%201.webp?updatedAt=1750336261959',
   },
   {
     title: 'New Builds',
     description: 'Bringing your vision to life from the ground up with modern, energy-efficient construction.',
-    icon: Building,
-    color: 'bg-success-500 text-white',
     slug: 'new-builds',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Hero%20Image.webp?updatedAt=1750336571403',
   },
   {
     title: 'Hard Landscaping',
     description: 'Enhancing your outdoor space with durable and beautiful hard landscaping features.',
-    icon: Tree,
-    color: 'bg-primary-700 text-white',
     slug: 'hard-landscaping',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%203.webp?updatedAt=1750336260364',
   },
   {
     title: 'Kitchens & Bathrooms',
     description: 'Beautiful, functional spaces tailored to your specific needs and style.',
-    icon: Home,
-    color: 'bg-primary-600 text-white',
     slug: 'kitchens-bathrooms',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%204.webp?updatedAt=1750336257595',
   }
@@ -65,12 +51,10 @@ const services = [
 const ServiceCard: React.FC<{
   title: string;
   description: string;
-  icon: React.ElementType;
-  color: string;
   index: number;
   slug: string;
   image?: string;
-}> = ({ title, description, icon: Icon, color, index, slug, image }) => {
+}> = ({ title, description, index, slug, image }) => {
 
   return (
     <motion.div
@@ -81,20 +65,13 @@ const ServiceCard: React.FC<{
       className="card group hover:shadow-custom-lg cursor-pointer"
     >
       <div className="p-10">
-        {image ? (
+        {image && (
           <div className="mb-6">
             <img 
               src={image} 
               alt={title}
-              className="w-full h-48 object-cover rounded-lg mb-4"
+              className="w-full h-48 object-cover rounded-lg"
             />
-            <div className={`w-16 h-16 rounded-lg ${color} flex items-center justify-center`}>
-              <Icon size={32} />
-            </div>
-          </div>
-        ) : (
-          <div className={`w-16 h-16 rounded-lg ${color} flex items-center justify-center mb-6`}>
-            <Icon size={32} />
           </div>
         )}
         <Link to={`/services#${slug}`} className="text-inherit no-underline">
@@ -127,7 +104,7 @@ const Services: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {services.map((service, index) => (
             <ServiceCard
               key={service.title}
