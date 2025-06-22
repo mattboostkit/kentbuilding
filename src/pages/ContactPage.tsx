@@ -15,7 +15,7 @@ import { motion } from 'framer-motion';
 const ContactBanner: React.FC = () => {
   return (
     <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Hero%20Image.webp?updatedAt=1750336571403')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           Contact <span className="text-primary-300">Us</span>

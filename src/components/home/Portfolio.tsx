@@ -13,10 +13,10 @@ const projects = [
     location: 'Maidstone, Kent',
     completionDate: 'April 2025',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%204.webp?updatedAt=1750336257595',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%206.webp?updatedAt=1750336257609',
     additionalImages: [
       'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%205.webp?updatedAt=1750336257699',
-      'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%203.webp?updatedAt=1750336257700'
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%203.webp?updatedAt=1750336257700',
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%206.webp?updatedAt=1750336257609'
     ],
     description: 'Complete bathroom transformation featuring large format gray porcelain tiles and built-in bathtub with matching tile surround. The project included new plumbing, electrical installation, and window replacement while maximizing natural light and creating a clean, modern aesthetic with neutral tones.',
   },
@@ -27,10 +27,10 @@ const projects = [
     location: 'Canterbury, Kent',
     completionDate: 'June 2024',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%206.webp?updatedAt=1750336260884',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%205.webp?updatedAt=1750336260805',
     additionalImages: [
       'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%202.webp?updatedAt=1750336259973',
-      'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%208.webp?updatedAt=1750336262077'
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%208.webp?updatedAt=1750336262077',
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%205.webp?updatedAt=1750336260805'
     ],
     description: 'Construction of an expansive natural sandstone patio featuring multiple levels and integrated planters. The project incorporated careful grading for optimal drainage, precision stone cutting for seamless joints, and strategic placement to capture panoramic countryside views while creating distinct entertaining zones.',
   },
@@ -41,10 +41,10 @@ const projects = [
     location: 'Ashford, Kent',
     completionDate: 'November 2024',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2011.webp?updatedAt=1750336255244',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%201.webp?updatedAt=1750336261959',
     additionalImages: [
       'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2013.webp?updatedAt=1750336254762',
-      'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2017.webp?updatedAt=1750336257584'
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2017.webp?updatedAt=1750336257584',
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%201.webp?updatedAt=1750336261959'
     ],
     description: 'Comprehensive roof renovation of a historic timber-framed property, including structural assessment of original oak beams, installation of modern insulation systems, and preservation of traditional construction methods. The project required careful integration of contemporary building standards with heritage conservation requirements.',
   },
@@ -55,9 +55,9 @@ const projects = [
     location: 'Provence, Northern France',
     completionDate: 'August 2024',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%201.webp?updatedAt=1750336257578',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%203.webp?updatedAt=1750336257692',
     additionalImages: [
-      'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%202.webp?updatedAt=1750336257692'
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%202.webp?updatedAt=1750336257692',
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%203.webp?updatedAt=1750336257692'
     ],
     description: 'Installation of a rectangular swimming pool with integrated LED lighting system and natural stone coping. The project included excavation, waterproofing, filtration systems, and evening lighting design to create a stunning focal point that complements the rural French landscape setting.',
   },

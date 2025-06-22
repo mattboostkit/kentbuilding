@@ -13,10 +13,10 @@ const projects = [
     location: 'Maidstone, Kent',
     completionDate: 'April 2025',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%204.webp?updatedAt=1750336257595',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%206.webp?updatedAt=1750336257609',
     additionalImages: [
       'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%205.webp?updatedAt=1750336257699',
-      'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%203.webp?updatedAt=1750336257700'
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%203.webp?updatedAt=1750336257700',
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%206.webp?updatedAt=1750336257609'
     ],
     description: 'Complete bathroom transformation featuring large format gray porcelain tiles and built-in bathtub with matching tile surround. The project included new plumbing, electrical installation, and window replacement while maximizing natural light and creating a clean, modern aesthetic with neutral tones.',
   },
@@ -27,10 +27,10 @@ const projects = [
     location: 'Canterbury, Kent',
     completionDate: 'June 2024',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%206.webp?updatedAt=1750336260884',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%205.webp?updatedAt=1750336260805',
     additionalImages: [
       'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%202.webp?updatedAt=1750336259973',
-      'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%208.webp?updatedAt=1750336262077'
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%208.webp?updatedAt=1750336262077',
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%205.webp?updatedAt=1750336260805'
     ],
     description: 'Construction of an expansive natural sandstone patio featuring multiple levels and integrated planters. The project incorporated careful grading for optimal drainage, precision stone cutting for seamless joints, and strategic placement to capture panoramic countryside views while creating distinct entertaining zones.',
   },
@@ -41,10 +41,10 @@ const projects = [
     location: 'Ashford, Kent',
     completionDate: 'November 2024',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2011.webp?updatedAt=1750336255244',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%201.webp?updatedAt=1750336261959',
     additionalImages: [
       'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2013.webp?updatedAt=1750336254762',
-      'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2017.webp?updatedAt=1750336257584'
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2017.webp?updatedAt=1750336257584',
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%201.webp?updatedAt=1750336261959'
     ],
     description: 'Comprehensive roof renovation of a historic timber-framed property, including structural assessment of original oak beams, installation of modern insulation systems, and preservation of traditional construction methods. The project required careful integration of contemporary building standards with heritage conservation requirements.',
   },
@@ -55,9 +55,9 @@ const projects = [
     location: 'Provence, Northern France',
     completionDate: 'August 2024',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%201.webp?updatedAt=1750336257578',
-    beforeImage: 'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%203.webp?updatedAt=1750336257692',
     additionalImages: [
-      'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%202.webp?updatedAt=1750336257692'
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%202.webp?updatedAt=1750336257692',
+      'https://ik.imagekit.io/boostkit/Kent%20Building/Swimming%20Pool%203.webp?updatedAt=1750336257692'
     ],
     description: 'Installation of a rectangular swimming pool with integrated LED lighting system and natural stone coping. The project included excavation, waterproofing, filtration systems, and evening lighting design to create a stunning focal point that complements the rural French landscape setting.',
   },
@@ -66,7 +66,7 @@ const projects = [
 const PortfolioBanner: React.FC = () => {
   return (
     <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Hero%20Image.webp?updatedAt=1750336571403')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           Our <span className="text-primary-300">Portfolio</span>
@@ -94,7 +94,7 @@ const PortfolioPage: React.FC = () => {
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'View our portfolio of completed building projects across Kent. See before and after transformations of period restorations, home renovations, extensions, and commercial refurbishments.');
+      metaDescription.setAttribute('content', 'View our portfolio of completed building projects across Kent. See our quality craftsmanship in period restorations, home renovations, extensions, and commercial refurbishments.');
     }
 
     // Scroll to top on page load
@@ -240,29 +240,22 @@ const PortfolioPage: React.FC = () => {
                     {project.description}
                   </p>
 
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">Before & After</h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                    <div>
-                      <p className="text-sm font-medium text-gray-500 mb-2">Before</p>
-                      <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                        <img
-                          src={project.beforeImage}
-                          alt={`Before renovation - ${project.title} by Kent Building & Construction in ${project.location}`}
-                          className="w-full h-full object-cover"
-                        />
+                  {project.additionalImages && project.additionalImages.length > 0 && (
+                    <>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-3">Project Gallery</h4>
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                        {project.additionalImages.map((image, index) => (
+                          <div key={index} className="aspect-[4/3] rounded-lg overflow-hidden">
+                            <img
+                              src={image}
+                              alt={`${project.title} - Additional view ${index + 1} by Kent Building & Construction in ${project.location}`}
+                              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            />
+                          </div>
+                        ))}
                       </div>
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-gray-500 mb-2">After</p>
-                      <div className="aspect-[4/3] rounded-lg overflow-hidden">
-                        <img
-                          src={project.image}
-                          alt={`After completion - ${project.title} by Kent Building & Construction in ${project.location}`}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                    </>
+                  )}
 
                   <div className="flex justify-center">
                     <Link

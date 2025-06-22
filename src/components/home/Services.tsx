@@ -10,6 +10,7 @@ const services = [
     icon: Landmark,
     color: 'bg-primary-500 text-white',
     slug: 'listed-heritage-buildings',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2011.webp?updatedAt=1750336255244',
   },
   {
     title: 'Restoration & Refurbishments',
@@ -17,6 +18,7 @@ const services = [
     icon: Home,
     color: 'bg-secondary-500 text-white',
     slug: 'restoration-refurbishments',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%201.webp?updatedAt=1750611791951',
   },
   {
     title: 'Extensions',
@@ -24,6 +26,7 @@ const services = [
     icon: Building,
     color: 'bg-accent-500 text-white',
     slug: 'extensions',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions%201.webp?updatedAt=1750611827374',
   },
   {
     title: 'Structural Repairs',
@@ -31,6 +34,7 @@ const services = [
     icon: Wrench,
     color: 'bg-gray-700 text-white',
     slug: 'structural-repairs',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%201.webp?updatedAt=1750336261959',
   },
   {
     title: 'New Builds',
@@ -38,6 +42,7 @@ const services = [
     icon: Building,
     color: 'bg-success-500 text-white',
     slug: 'new-builds',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Hero%20Image.webp?updatedAt=1750336571403',
   },
   {
     title: 'Hard Landscaping',
@@ -45,6 +50,7 @@ const services = [
     icon: Tree,
     color: 'bg-primary-700 text-white',
     slug: 'hard-landscaping',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%203.webp?updatedAt=1750336260364',
   },
   {
     title: 'Kitchens & Bathrooms',
@@ -52,6 +58,7 @@ const services = [
     icon: Home,
     color: 'bg-primary-600 text-white',
     slug: 'kitchens-bathrooms',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%204.webp?updatedAt=1750336257595',
   }
 ];
 
@@ -62,7 +69,8 @@ const ServiceCard: React.FC<{
   color: string;
   index: number;
   slug: string;
-}> = ({ title, description, icon: Icon, color, index, slug }) => {
+  image?: string;
+}> = ({ title, description, icon: Icon, color, index, slug, image }) => {
 
   return (
     <motion.div
@@ -73,9 +81,22 @@ const ServiceCard: React.FC<{
       className="card group hover:shadow-custom-lg cursor-pointer"
     >
       <div className="p-10">
-        <div className={`w-16 h-16 rounded-lg ${color} flex items-center justify-center mb-6`}>
-          <Icon size={32} />
-        </div>
+        {image ? (
+          <div className="mb-6">
+            <img 
+              src={image} 
+              alt={title}
+              className="w-full h-48 object-cover rounded-lg mb-4"
+            />
+            <div className={`w-16 h-16 rounded-lg ${color} flex items-center justify-center`}>
+              <Icon size={32} />
+            </div>
+          </div>
+        ) : (
+          <div className={`w-16 h-16 rounded-lg ${color} flex items-center justify-center mb-6`}>
+            <Icon size={32} />
+          </div>
+        )}
         <Link to={`/services#${slug}`} className="text-inherit no-underline">
           <h3 className="text-xl font-bold mb-4 group-hover:text-primary-600 transition-colors">
             {title}

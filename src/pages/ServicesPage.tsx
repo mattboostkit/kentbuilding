@@ -18,7 +18,7 @@ const services = [
       'Sympathetic modernisation',
     ],
     icon: Landmark,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2011.webp?updatedAt=1750336255244',
   },
   {
     id: 'restoration-refurbishments',
@@ -34,7 +34,7 @@ const services = [
       'Interior design services',
     ],
     icon: Home,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%201.webp?updatedAt=1750611791951',
   },
   {
     id: 'extensions',
@@ -50,7 +50,7 @@ const services = [
       'Energy-efficient construction methods',
     ],
     icon: Building,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions%201.webp?updatedAt=1750611827374',
   },
   {
     id: 'structural-repairs',
@@ -66,7 +66,7 @@ const services = [
       'Timber repairs and damp proofing',
     ],
     icon: Wrench,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%201.webp?updatedAt=1750336261959',
   },
   {
     id: 'new-builds',
@@ -82,7 +82,7 @@ const services = [
       'Sustainable building practices',
     ],
     icon: Home,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Hero%20Image.webp?updatedAt=1750336571403',
   },
   {
     id: 'hard-landscaping',
@@ -96,7 +96,7 @@ const services = [
       'Planting schemes and garden design',
     ],
     icon: Tree,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%203.webp?updatedAt=1750336260364',
   },
   {
     id: 'kitchens-bathrooms',
@@ -112,7 +112,7 @@ const services = [
       'Heating and lighting solutions',
     ],
     icon: Home,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%204.webp?updatedAt=1750336257595',
   },
 ];
 
@@ -137,7 +137,7 @@ const benefits = [
 const ServiceBanner: React.FC = () => {
   return (
     <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Oast_Template.webp?updatedAt=1747752556066')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Hero%20Image.webp?updatedAt=1750336571403')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           Our Building <span className="text-primary-300">Services</span>
