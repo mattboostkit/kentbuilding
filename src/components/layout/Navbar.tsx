@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 
 const Navbar: React.FC = () => {
-  const logoWhiteUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/Kent%20Building%20&%20Construction_White-cropped.svg?updatedAt=1747751797490";
-  const logoColorUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/Kent%20Building%20&%20Construction-cropped.svg?updatedAt=1747751797864";
+  const logoWhiteUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/KBAC_Logo.webp?updatedAt=1751889823385";
+const logoColorUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/KBAC_Logo.webp?updatedAt=1751889823385";
 
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);

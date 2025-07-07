@@ -25,20 +25,7 @@ const AboutBanner: React.FC = () => {
   );
 };
 
-const teamMembers = [
-  {
-    name: 'Spencer Ellis',
-    role: 'Founder',
-    image: 'https://cdn-icons-png.freepik.com/512/13326/13326333.png',
-    bio: 'With over 20 years of experience, Spencer founded Kent Building & Construction with a vision to deliver exceptional quality and service across Kent.',
-  },
-  {
-    name: 'John Smith',
-    role: 'Operations Director',
-    image: 'https://cdn-icons-png.freepik.com/512/13326/13326333.png',
-    bio: 'John oversees all project operations, ensuring every build is delivered to the highest standards, on time and within budget.',
-  },
-];
+
 
 const values = [
   {
@@ -229,42 +216,7 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="py-16" id="our-team" aria-labelledby="team-heading">
-        <div className="container-custom">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 id="team-heading" className="section-title">Meet Our <span className="text-primary-600">Team</span></h2>
-            <p className="section-subtitle">
-              Our experienced professionals are dedicated to delivering exceptional quality and service on every project.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true, margin: "-100px" }}
-                className="bg-white rounded-lg shadow-custom overflow-hidden"
-              >
-                <div className="aspect-square">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-primary-600 font-medium mb-4">{member.role}</p>
-                  <p className="text-gray-600">{member.bio}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="py-16 bg-primary-600 relative">
         <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914')] bg-cover bg-center opacity-10"></div>

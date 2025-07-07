@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 
 const Footer: React.FC = () => {
-  const logoWhiteUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/Kent%20Building%20&%20Construction_White-cropped.svg?updatedAt=1747751797490";
+  const logoWhiteUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/KBAC_Logo.webp?updatedAt=1751889823385";
 
   const currentYear = new Date().getFullYear();
 
