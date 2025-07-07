@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
               <img 
                 src={logoWhiteUrl} 
                 alt="Kent Building & Construction Logo" 
-                className="h-12" 
+                className="h-14" 
               />
             </Link>
 
