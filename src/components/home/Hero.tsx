@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Ruler, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
@@ -49,8 +48,8 @@ const Hero: React.FC = () => {
             <Link to="/contact" className="btn btn-primary text-base px-7 py-3">
               Get a Quote
             </Link>
-            <Link to="/portfolio" className="btn btn-secondary text-white text-base px-7 py-3 hover:bg-primary-500/10">
-              View Our Projects
+            <Link to="/services" className="btn btn-secondary text-white text-base px-7 py-3 hover:bg-primary-500/10">
+              View Our Services
             </Link>
           </motion.div>
         </div>
