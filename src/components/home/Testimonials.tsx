@@ -93,7 +93,7 @@ const Testimonials: React.FC = () => {
   return (
     <section className="py-20 bg-primary-600 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Hero%20Image.webp?updatedAt=1750336571403')] bg-cover bg-center" />
+                        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914')] bg-cover bg-center" />
       </div>
 
       <div className="container-custom relative z-10">

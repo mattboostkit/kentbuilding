@@ -74,15 +74,13 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-6">Our Services</h3>
             <ul className="space-y-4">
               {[
-                'Restoring Period and Listed Buildings',
-                'Home Renovation & Refurbishment',
                 'Extensions',
-                'Office and Shop Refurbishment',
-                'Landscaping and Ground Works',
-                'Oast House Restoration',
-                'Oak Framed Buildings',
-                'Barn Conversions',
-                'Eco-Friendly New Builds',
+                'Restoration and Refurbishments',
+                'New Builds',
+                'Listed Buildings',
+                'Landscaping and Patios',
+                'Structural Repairs',
+                'Kitchens and Bathrooms',
               ].map((service) => (
                 <li key={service}>
                   <Link
@@ -104,7 +102,7 @@ const Footer: React.FC = () => {
               <li className="flex">
                 <MapPin className="mr-4 text-primary-400 flex-shrink-0" size={20} />
                 <span className="text-gray-400">
-                  Maple Barn Beeches Farm Rd, Uckfield, East Sussex TN22 5QD
+                  3rd Floor, 21 Perrymount Road, Haywards Heath, West Sussex RH16 3TP
                 </span>
               </li>
               <li className="flex">

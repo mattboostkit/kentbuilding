@@ -5,38 +5,6 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
-    id: 'listed-heritage-buildings',
-    title: 'Listed & Heritage Buildings',
-    tagline: 'Preserving character and history with expert care',
-    description: 'Our services for Listed & Heritage Buildings focus on preserving their unique character and history. We provide expert care in every restoration and refurbishment project, adhering to the highest standards for these special properties.',
-    features: [
-      'Sensitive restoration of listed and period properties',
-      'Heritage conservation expertise',
-      'Traditional craftsmanship and materials',
-      'Listed building consent management',
-      'Structural repairs and stabilisation',
-      'Sympathetic modernisation',
-    ],
-    icon: Landmark,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2011.webp?updatedAt=1750336255244',
-  },
-  {
-    id: 'restoration-refurbishments',
-    title: 'Restoration & Refurbishments',
-    tagline: 'Breathe new life into your property',
-    description: 'Our Restoration & Refurbishments services are designed to breathe new life into your property. We handle complete transformations, combining quality craftsmanship with innovative solutions to modernize and enhance your space.',
-    features: [
-      'Complete interior and exterior renovations',
-      'Modernisation and layout reconfiguration',
-      'High-quality finishes throughout',
-      'Kitchen and bathroom remodelling',
-      'Energy efficiency improvements',
-      'Interior design services',
-    ],
-    icon: Home,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%201.webp?updatedAt=1750611791951',
-  },
-  {
     id: 'extensions',
     title: 'Extensions',
     tagline: 'Seamlessly expand your living or working space',
@@ -50,23 +18,23 @@ const services = [
       'Energy-efficient construction methods',
     ],
     icon: Building,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions%201.webp?updatedAt=1750611827374',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-3.jpg?updatedAt=1751885526967',
   },
   {
-    id: 'structural-repairs',
-    title: 'Structural Repairs',
-    tagline: 'Safeguarding the integrity of your building',
-    description: 'Our Structural Repairs service focuses on safeguarding the integrity of your building. We diagnose and resolve structural issues, providing expert solutions to ensure the long-term stability and safety of your property.',
+    id: 'restoration-refurbishment',
+    title: 'Restoration and Refurbishments',
+    tagline: 'Breathe new life into your property',
+    description: 'Our Restoration & Refurbishments services are designed to breathe new life into your property. We handle complete transformations, combining quality craftsmanship with innovative solutions to modernize and enhance your space.',
     features: [
-      'Diagnosis and repair of structural issues',
-      'Foundation and subsidence solutions',
-      'Structural stabilisation for heritage and modern buildings',
-      'Load-bearing wall alterations',
-      'Crack stitching and wall tie replacement',
-      'Timber repairs and damp proofing',
+      'Complete interior and exterior renovations',
+      'Modernisation and layout reconfiguration',
+      'High-quality finishes throughout',
+      'Kitchen and bathroom remodelling',
+      'Energy efficiency improvements',
+      'Interior design services',
     ],
-    icon: Wrench,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%201.webp?updatedAt=1750336261959',
+    icon: Home,
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-6.jpg?updatedAt=1751887634085',
   },
   {
     id: 'new-builds',
@@ -82,13 +50,29 @@ const services = [
       'Sustainable building practices',
     ],
     icon: Home,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Hero%20Image.webp?updatedAt=1750336571403',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
   },
   {
-    id: 'hard-landscaping',
-    title: 'Hard Landscaping',
-    tagline: 'Enhancing your outdoor space with durable features',
-    description: 'Enhance your outdoor areas with our Hard Landscaping services. We create beautiful, functional, and durable features, from patios and driveways to garden structures, transforming your exterior spaces.',
+    id: 'heritage-listed',
+    title: 'Heritage and Listed Buildings',
+    tagline: 'Preserving character and history with expert care',
+    description: 'Our services for Heritage and Listed Buildings focus on preserving their unique character and history. We provide expert care in every restoration and refurbishment project, adhering to the highest standards for these special properties.',
+    features: [
+      'Sensitive restoration of listed and period properties',
+      'Heritage conservation expertise',
+      'Traditional craftsmanship and materials',
+      'Listed building consent management',
+      'Structural repairs and stabilisation',
+      'Sympathetic modernisation',
+    ],
+    icon: Landmark,
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Heritage%20and%20Listed/Heritage-6.jpg?updatedAt=1751887981031',
+  },
+  {
+    id: 'landscaping-and-patios',
+    title: 'Landscaping and Patios',
+    tagline: 'Transform your outdoor space with professional design',
+    description: 'Transform your outdoor areas with our Landscaping and Patios services. We create beautiful, functional, and durable features, from patios and driveways to garden structures, transforming your exterior spaces.',
     features: [
       'Patios, driveways, and paths',
       'Retaining walls and garden structures',
@@ -96,11 +80,27 @@ const services = [
       'Planting schemes and garden design',
     ],
     icon: Tree,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%203.webp?updatedAt=1750336260364',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-5.jpg?updatedAt=1751886599370',
+  },
+  {
+    id: 'structural-repairs',
+    title: 'Structural Repairs',
+    tagline: 'Safeguarding the integrity of your building',
+    description: 'Our Structural Repairs service focuses on safeguarding the integrity of your building. We diagnose and resolve structural issues, providing expert solutions to ensure the long-term stability and safety of your property.',
+    features: [
+      'Diagnosis and repair of structural issues',
+      'Foundation and subsidence solutions',
+      'Structural stabilisation for heritage and modern buildings',
+      'Load-bearing wall alterations',
+      'Crack stitching and wall tie replacement',
+      'Timber repairs and damp proofing',
+    ],
+    icon: Wrench,
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-9.jpg?updatedAt=1751888401747',
   },
   {
     id: 'kitchens-bathrooms',
-    title: 'Kitchens & Bathrooms',
+    title: 'Kitchens and Bathrooms',
     tagline: 'Beautiful, functional spaces tailored to you',
     description: 'Create your dream kitchen or bathroom with our bespoke services. We combine style, functionality, and quality craftsmanship to design and install beautiful spaces tailored to your specific needs.',
     features: [
@@ -137,7 +137,7 @@ const benefits = [
 const ServiceBanner: React.FC = () => {
   return (
     <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Hero%20Image.webp?updatedAt=1750336571403')] bg-cover bg-center opacity-20"></div>
+              <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           Our Building <span className="text-primary-300">Services</span>
@@ -175,7 +175,7 @@ const ServicesPage: React.FC = () => {
         "name": "What areas do you serve in Kent?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We provide our building services throughout Kent and surrounding areas, including Canterbury, Maidstone, Tunbridge Wells, Sevenoaks, Ashford, Folkestone, Rochester, Whitstable, Faversham, Dover, Deal, and Tonbridge."
+          "text": "We provide our building services throughout Kent, Sussex and surrounding areas, centered around Wadhurst with a 30-mile service radius. This includes Tunbridge Wells, Crowborough, Maidstone, Crawley, Haywards Heath, Lewes, Hastings, Uckfield, Brighton & Hove, Redhill, and Bromley."
         }
       },
       {
@@ -264,18 +264,20 @@ const ServicesPage: React.FC = () => {
                   }`}
                 >
                   <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                    <div className="relative">
-                      <div className="rounded-lg overflow-hidden shadow-custom-lg aspect-video">
-                        <img
-                          src={service.image}
-                          alt={`${service.title} - Professional building services by Kent Building & Construction`}
-                          className="w-full h-full object-cover"
-                        />
+                    <Link to={`/services/${service.id}`} className="block group">
+                      <div className="relative">
+                        <div className="rounded-lg overflow-hidden shadow-custom-lg aspect-video group-hover:shadow-custom-xl transition-shadow duration-300">
+                          <img
+                            src={service.image}
+                            alt={`${service.title} - Professional building services by Kent Building & Construction`}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                        <div className="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-md group-hover:shadow-lg transition-shadow duration-300">
+                          <service.icon size={32} className="text-primary-600" />
+                        </div>
                       </div>
-                      <div className="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-md">
-                        <service.icon size={32} className="text-primary-600" />
-                      </div>
-                    </div>
+                    </Link>
                   </div>
 
                   <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
@@ -296,9 +298,14 @@ const ServicesPage: React.FC = () => {
                       ))}
                     </div>
 
-                    <Link to="/contact" className="btn btn-primary">
-                      Enquire About This Service
-                    </Link>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <Link to={`/services/${service.id}`} className="btn btn-primary">
+                        Learn More
+                      </Link>
+                      <Link to="/contact" className="btn btn-secondary">
+                        Enquire About This Service
+                      </Link>
+                    </div>
                   </div>
                 </motion.div>
               </div>

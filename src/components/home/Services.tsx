@@ -5,43 +5,43 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
-    title: 'Listed & Heritage Buildings',
-    description: 'Preserving character and history with expert care.',
-    slug: 'listed-heritage-buildings',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%2011.webp?updatedAt=1750336255244',
-  },
-  {
-    title: 'Restoration & Refurbishments',
-    description: 'Breathe new life into your property with our expert renovation services.',
-    slug: 'restoration-refurbishments',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%201.webp?updatedAt=1750611791951',
-  },
-  {
     title: 'Extensions',
     description: 'Seamlessly expand your living or working space with our bespoke extension solutions.',
     slug: 'extensions',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions%201.webp?updatedAt=1750611827374',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-3.jpg?updatedAt=1751885526967',
   },
   {
-    title: 'Structural Repairs',
-    description: 'Safeguarding the integrity of your building with expert structural solutions.',
-    slug: 'structural-repairs',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Renovation%201.webp?updatedAt=1750336261959',
+    title: 'Restoration and Refurbishments',
+    description: 'Breathe new life into your property with our expert renovation services.',
+    slug: 'restoration-refurbishment',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-6.jpg?updatedAt=1751887634085',
   },
   {
     title: 'New Builds',
     description: 'Bringing your vision to life from the ground up with modern, energy-efficient construction.',
     slug: 'new-builds',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Hero%20Image.webp?updatedAt=1750336571403',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
   },
   {
-    title: 'Hard Landscaping',
-    description: 'Enhancing your outdoor space with durable and beautiful hard landscaping features.',
-    slug: 'hard-landscaping',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Patio%203.webp?updatedAt=1750336260364',
+    title: 'Heritage and Listed Buildings',
+    description: 'Preserving character and history with expert care.',
+    slug: 'heritage-listed',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Heritage%20and%20Listed/Heritage-6.jpg?updatedAt=1751887981031',
   },
   {
-    title: 'Kitchens & Bathrooms',
+    title: 'Landscaping and Patios',
+    description: 'Transform your outdoor space with professional landscaping and patio design.',
+    slug: 'landscaping-and-patios',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-5.jpg?updatedAt=1751886599370',
+  },
+  {
+    title: 'Structural Repairs',
+    description: 'Safeguarding the integrity of your building with expert structural solutions.',
+    slug: 'structural-repairs',
+    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-9.jpg?updatedAt=1751888401747',
+  },
+  {
+    title: 'Kitchens and Bathrooms',
     description: 'Beautiful, functional spaces tailored to your specific needs and style.',
     slug: 'kitchens-bathrooms',
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Bathroom%204.webp?updatedAt=1750336257595',
@@ -72,9 +72,9 @@ const ServiceCard: React.FC<{
               alt={title}
               className="w-full h-48 object-cover rounded-lg"
             />
-          </div>
+        </div>
         )}
-        <Link to={`/services#${slug}`} className="text-inherit no-underline">
+        <Link to={`/services/${slug}`} className="text-inherit no-underline">
           <h3 className="text-xl font-bold mb-4 group-hover:text-primary-600 transition-colors">
             {title}
           </h3>
@@ -83,7 +83,7 @@ const ServiceCard: React.FC<{
           {description}
         </p>
         <Link
-          to={`/services#${slug}`}
+          to={`/services/${slug}`}
           className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700"
         >
           Learn More <ChevronRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />

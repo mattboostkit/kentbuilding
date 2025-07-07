@@ -15,7 +15,7 @@ import { motion } from 'framer-motion';
 const ContactBanner: React.FC = () => {
   return (
     <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Hero%20Image.webp?updatedAt=1750336571403')] bg-cover bg-center opacity-20"></div>
+              <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914')] bg-cover bg-center opacity-20"></div>
       <div className="container-custom relative z-10 text-center">
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           Contact <span className="text-primary-300">Us</span>
@@ -52,7 +52,7 @@ const ContactPage: React.FC = () => {
       await new Promise(resolve => setTimeout(resolve, 1500));
       setSubmitStatus('success');
       reset();
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -178,14 +178,18 @@ const ContactPage: React.FC = () => {
 
               <div className="mt-8">
                 <h4 className="text-lg font-semibold text-gray-900 mb-4">Service Areas</h4>
-                <p className="text-gray-600 mb-2">
-                  We provide construction services throughout Kent and the surrounding areas, including:
+                <p className="text-gray-600 mb-4">
+                  We provide construction services throughout Kent, Sussex and the surrounding areas, centered around Wadhurst with a 30-mile service radius.
                 </p>
-                <div className="grid grid-cols-2 gap-2">
+
+                <p className="text-gray-600 mb-2">
+                  Key areas we serve include:
+                </p>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                   {[
-                    'Canterbury', 'Maidstone', 'Tunbridge Wells', 'Sevenoaks',
-                    'Ashford', 'Folkestone', 'Rochester', 'Whitstable',
-                    'Faversham', 'Dover', 'Deal', 'Tonbridge',
+                    'Tunbridge Wells', 'Crowborough', 'Maidstone', 'Crawley',
+                    'Haywards Heath', 'Lewes', 'Hastings', 'Uckfield',
+                    'Brighton & Hove', 'Redhill', 'Bromley',
                   ].map((area) => (
                     <div key={area} className="flex items-center">
                       <div className="w-2 h-2 rounded-full bg-primary-600 mr-2"></div>
@@ -385,12 +389,16 @@ const ContactPage: React.FC = () => {
 
           <div className="bg-white rounded-lg shadow-custom-lg overflow-hidden">
             <div className="h-96 w-full">
-              {/* Google Map would be embedded here in a real application */}
-              <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                <p className="text-gray-600 text-lg">
-                  Google Maps Embed Would Appear Here
-                </p>
-              </div>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14213.474287033494!2d0.06757525671006759!3d50.96789577496834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df6121da6b5715%3A0x1f5dc28a069b7b25!2sUckfield%20TN22%205QD!5e0!3m2!1sen!2suk!4v1751879648801!5m2!1sen!2suk" 
+                width="100%" 
+                height="100%" 
+                style={{border:0}} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Kent Building & Construction Location"
+              ></iframe>
             </div>
 
             <div className="p-6 bg-white">
