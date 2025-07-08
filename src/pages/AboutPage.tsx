@@ -156,21 +156,12 @@ const AboutPage: React.FC = () => {
               viewport={{ once: true, margin: "-100px" }}
               className="relative"
             >
-              <div className="grid grid-cols-2 gap-4">
-                <div className="aspect-[3/4]">
-                  <img
-                    src="https://cdn-icons-png.freepik.com/512/13326/13326333.png"
-                    alt="Team at work"
-                    className="w-full h-full object-cover rounded-lg shadow-md"
-                  />
-                </div>
-                <div className="aspect-[3/4] mt-8">
-                  <img
-                    src="https://cdn-icons-png.freepik.com/512/13326/13326333.png"
-                    alt="Construction work"
-                    className="w-full h-full object-cover rounded-lg shadow-md"
-                  />
-                </div>
+              <div className="aspect-[3/4]">
+                <img
+                  src="https://ik.imagekit.io/boostkit/Kent%20Building/Spencer.jpg?updatedAt=1751970242590"
+                  alt="Spencer Ellis - Managing Director of Kent Building & Construction"
+                  className="w-full h-full object-cover rounded-lg shadow-md"
+                />
               </div>
               <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-lg shadow-lg max-w-xs">
                 <div className="flex items-center">

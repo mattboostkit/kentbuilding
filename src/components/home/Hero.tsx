@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Hero: React.FC = () => {
   const staticSlide = {
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
-    title: 'Building Excellence across the South East since 2008. Exceptional craftsmanship and superior service for every project',
+    title: 'Building Excellence across the South East since 2008',
   };
 
   return (
@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl text-gray-200 mt-8 max-w-2xl"
           >
-            We deliver exceptional building solutions with a focus on quality, reliability, and customer satisfaction for both residential and commercial projects.
+            We deliver exceptional building solutions with exceptional craftsmanship and superior service for both residential and commercial projects.
           </motion.p>
 
           <motion.div
