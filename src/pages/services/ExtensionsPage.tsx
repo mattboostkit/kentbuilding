@@ -36,7 +36,7 @@ const ExtensionsPage: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional house extensions in Kent and Sussex. Single and double storey extensions, conservatories, and home improvements. Free consultation and quotes available.');
+      metaDescription.setAttribute('content', 'Professional house extensions in the South East. Single and double storey extensions, conservatories, and home improvements. Free consultation and quotes available. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk');
     }
 
     window.scrollTo(0, 0);
@@ -83,7 +83,7 @@ const ExtensionsPage: React.FC = () => {
           </h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
             Transform your home with bespoke extensions designed and built to the highest standards. 
-            From single storey additions to impressive double storey extensions.
+            From single storey additions to impressive double storey extensions. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk
           </p>
         </div>
       </section>

@@ -20,9 +20,9 @@ const ContactBanner: React.FC = () => {
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           Contact <span className="text-primary-300">Us</span>
         </h1>
-        <p className="text-xl text-primary-100 max-w-2xl mx-auto">
-          Get in touch with our team to discuss your construction project or request a free quote.
-        </p>
+                    <p className="text-xl text-primary-100 max-w-2xl mx-auto">
+              Get in touch with our team to discuss your construction project or request a free quote. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk
+            </p>
       </div>
     </section>
   );
@@ -66,7 +66,7 @@ const ContactPage: React.FC = () => {
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Contact Kent Building & Construction for all your building needs. Request a free quote for period property restoration, home renovations, extensions, and more. Call 07766 141 811.');
+      metaDescription.setAttribute('content', 'Contact Kent Building & Construction for all your building needs. Request a free quote for period property restoration, home renovations, extensions, and more. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk');
     }
 
     // Scroll to top on page load
@@ -129,7 +129,7 @@ const ContactPage: React.FC = () => {
                       href="tel:07766141811"
                       className="text-gray-600 hover:text-primary-600 transition-colors"
                     >
-                      07766 141 811
+                      07766 141811
                     </a>
                   </div>
                 </div>
@@ -141,10 +141,10 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">Email</h4>
                     <a
-                      href="mailto:info@kentconstruction.co.uk"
+                      href="mailto:spencer@kentbuildingandconstruction.co.uk"
                       className="text-gray-600 hover:text-primary-600 transition-colors"
                     >
-                      info@kentconstruction.co.uk
+                      spencer@kentbuildingandconstruction.co.uk
                     </a>
                   </div>
                 </div>
@@ -155,11 +155,9 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">Address</h4>
-                    <p className="text-gray-600">
-                      Maple Barn Beeches Farm Rd,<br />
-                      Uckfield, East Sussex<br />
-                      TN22 5QD
-                    </p>
+                                    <p className="text-gray-600">
+                  We don't have a physical office location as we work directly from our clients' sites. We're based in the South East and serve the surrounding areas.
+                </p>
                   </div>
                 </div>
 
@@ -179,7 +177,7 @@ const ContactPage: React.FC = () => {
               <div className="mt-8">
                 <h4 className="text-lg font-semibold text-gray-900 mb-4">Service Areas</h4>
                 <p className="text-gray-600 mb-4">
-                  We provide construction services throughout Kent, Sussex and the surrounding areas, centered around Wadhurst with a 30-mile service radius.
+                  We provide construction services throughout the South East, centered around Wadhurst with a 30-mile service radius.
                 </p>
 
                 <p className="text-gray-600 mb-2">
@@ -187,9 +185,21 @@ const ContactPage: React.FC = () => {
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                   {[
-                    'Tunbridge Wells', 'Crowborough', 'Maidstone', 'Crawley',
-                    'Haywards Heath', 'Lewes', 'Hastings', 'Uckfield',
-                    'Brighton & Hove', 'Redhill', 'Bromley',
+                    'Wadhurst & surrounding areas',
+                    'Tunbridge Wells & surrounding areas',
+                    'Tonbridge & surrounding areas',
+                    'Sevenoaks & surrounding areas',
+                    'Goudhurst & surrounding areas',
+                    'Crowborough & surrounding areas',
+                    'Paddock Wood & surrounding areas',
+                    'Uckfield & surrounding areas',
+                    'Tenterden & surrounding areas',
+                    'Cranbrook & surrounding areas',
+                    'Hawkhurst & surrounding areas',
+                    'Heathfield & surrounding areas',
+                    'East Grinstead & surrounding areas',
+                    'Haywards Heath & surrounding areas',
+                    'Westerham & surrounding areas',
                   ].map((area) => (
                     <div key={area} className="flex items-center">
                       <div className="w-2 h-2 rounded-full bg-primary-600 mr-2"></div>
@@ -383,7 +393,7 @@ const ContactPage: React.FC = () => {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="section-title">Our <span className="text-primary-600">Location</span></h2>
             <p className="section-subtitle">
-              Visit our office to discuss your project in person.
+              We work directly from our clients' sites across the South East.
             </p>
           </div>
 
@@ -406,7 +416,7 @@ const ContactPage: React.FC = () => {
                 <div className="mb-4 md:mb-0">
                   <h3 className="text-xl font-bold text-gray-900 mb-1">Kent Building & Construction</h3>
                   <p className="text-gray-600">
-                    Maple Barn Beeches Farm Rd, Uckfield, East Sussex TN22 5QD
+                    We don't have a physical office location as we work directly from our clients' sites across the South East.
                   </p>
                 </div>
 

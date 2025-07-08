@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
             </Link>
 
             <p className="mt-5 text-gray-400 leading-relaxed">
-              Building Excellence across Kent since 2008. Quality craftsmanship and exceptional service for every project.
+              Building Excellence across the South East since 2008. Exceptional craftsmanship and superior service for every project.
             </p>
             <div className="flex space-x-5 mt-8">
               <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-primary-400 transition-colors">
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
               <li className="flex">
                 <MapPin className="mr-4 text-primary-400 flex-shrink-0" size={20} />
                 <span className="text-gray-400">
-                  3rd Floor, 21 Perrymount Road, Haywards Heath, West Sussex RH16 3TP
+                  We don't have a physical office location as we work directly from our clients' sites across the South East.
                 </span>
               </li>
               <li className="flex">
@@ -111,16 +111,16 @@ const Footer: React.FC = () => {
                   href="tel:07766141811"
                   className="text-gray-400 hover:text-primary-400 transition-colors"
                 >
-                  07766 141 811
+                  07766 141811
                 </a>
               </li>
               <li className="flex">
                 <Mail className="mr-4 text-primary-400 flex-shrink-0" size={20} />
                 <a
-                  href="mailto:info@kentbuildingconstruction.co.uk"
+                  href="mailto:spencer@kentbuildingandconstruction.co.uk"
                   className="text-gray-400 hover:text-primary-400 transition-colors"
                 >
-                  info@kentbuildingconstruction.co.uk
+                  spencer@kentbuildingandconstruction.co.uk
                 </a>
               </li>
             </ul>

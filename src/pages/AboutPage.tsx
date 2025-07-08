@@ -18,7 +18,7 @@ const AboutBanner: React.FC = () => {
           About <span className="text-primary-300">Kent Building & Construction</span>
         </h1>
         <p className="text-xl text-primary-100 max-w-2xl mx-auto">
-          Building Excellence in Kent and beyond with over 20 years of experience. Learn about our team, values, and commitment to quality.
+          Building Excellence in the South East and beyond with over 20 years of experience. Learn about our team, values, and commitment to quality. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk
         </p>
       </div>
     </section>
@@ -53,7 +53,7 @@ const AboutPage: React.FC = () => {
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Learn about Spencer Ellis and the Kent Building & Construction team. With over 20 years of experience delivering high-quality building projects across Kent and the South East.');
+      metaDescription.setAttribute('content', 'Learn about Spencer Ellis and the Kent Building & Construction team. With over 20 years of experience delivering high-quality building projects across the South East.');
     }
 
     // Scroll to top on page load
@@ -93,7 +93,7 @@ const AboutPage: React.FC = () => {
             >
               <h2 id="about-story-heading" className="section-title">Our <span className="text-primary-600">Story</span></h2>
               <p className="section-subtitle">
-                Building excellence in Kent for over 20 years
+                Building excellence in the South East for over 20 years
               </p>
 
               <div className="mt-6 space-y-4 text-gray-600">

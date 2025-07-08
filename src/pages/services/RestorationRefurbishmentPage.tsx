@@ -37,7 +37,7 @@ const RestorationRefurbishmentPage: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional restoration and refurbishment services in Kent and Sussex. Period property restoration, home renovations, and building refurbishment. Expert craftsmanship guaranteed.');
+      metaDescription.setAttribute('content', 'Professional restoration and refurbishment services in the South East. Period property restoration, home renovations, and building refurbishment. Expert craftsmanship guaranteed. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk');
     }
 
     window.scrollTo(0, 0);
@@ -84,7 +84,7 @@ const RestorationRefurbishmentPage: React.FC = () => {
           </h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
             Restore and refurbish your property with expert craftsmanship. From period homes to modern renovations, 
-            we bring new life to buildings while preserving their character and integrity.
+            we bring new life to buildings while preserving their character and integrity. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk
           </p>
         </div>
       </section>
@@ -226,10 +226,10 @@ const RestorationRefurbishmentPage: React.FC = () => {
                 className="btn btn-primary flex items-center justify-center"
               >
                 <Phone size={18} className="mr-2" />
-                Call 07766 141 811
+                Call 07766 141811
               </a>
               <a
-                href="mailto:info@kentconstruction.co.uk"
+                href="mailto:spencer@kentbuildingandconstruction.co.uk"
                 className="btn btn-secondary flex items-center justify-center"
               >
                 <Mail size={18} className="mr-2" />

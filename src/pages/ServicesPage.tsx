@@ -143,7 +143,7 @@ const ServiceBanner: React.FC = () => {
           Our Building <span className="text-primary-300">Services</span>
         </h1>
         <p className="text-xl text-primary-100 max-w-2xl mx-auto">
-          Our expertise covers a wide range of building services, with a particular focus on restoration, refurbishment, and structural works. Whether you own a listed property, need a modern extension, or want to transform your home, we deliver exceptional results with care, skill, and attention to detail.
+          Our expertise covers a wide range of building services, with a particular focus on restoration, refurbishment, and structural works. Whether you own a listed property, need a modern extension, or want to transform your home, we deliver exceptional results with care, skill, and attention to detail. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk
         </p>
       </div>
     </section>
@@ -158,7 +158,7 @@ const ServicesPage: React.FC = () => {
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Specialist building services by Kent Building & Construction including period property restoration, home renovations, extensions, commercial refurbishment, and oak framed buildings.');
+      metaDescription.setAttribute('content', 'Specialist building services by Kent Building & Construction including period property restoration, home renovations, extensions, commercial refurbishment, and oak framed buildings. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk');
     }
 
     // Scroll to top on page load
@@ -172,10 +172,10 @@ const ServicesPage: React.FC = () => {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What areas do you serve in Kent?",
+        "name": "What areas do you serve in the South East?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We provide our building services throughout Kent, Sussex and surrounding areas, centered around Wadhurst with a 30-mile service radius. This includes Tunbridge Wells, Crowborough, Maidstone, Crawley, Haywards Heath, Lewes, Hastings, Uckfield, Brighton & Hove, Redhill, and Bromley."
+          "text": "We provide our building services throughout the South East, centered around Wadhurst with a 30-mile service radius. This includes Wadhurst, Tunbridge Wells, Tonbridge, Sevenoaks, Goudhurst, Crowborough, Paddock Wood, Uckfield, Tenterden, Cranbrook, Hawkhurst, Heathfield, East Grinstead, Haywards Heath, Westerham and their surrounding areas."
         }
       },
       {
@@ -199,7 +199,7 @@ const ServicesPage: React.FC = () => {
         "name": "How long does a typical home extension take?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The timeline for extensions varies depending on size and complexity. A typical single-storey extension might take 8-12 weeks, while larger or more complex projects can take 3-6 months. We provide detailed timelines during the consultation process."
+          "text": "The timeline for extensions varies depending on size and complexity. A typical single storey extension may only take 6 weeks whilst larger more complex projects can take 3+ months. We provide detailed timelines during the consultation process so you may be confident in the time your project will take before committing to the build."
         }
       },
       {
@@ -265,18 +265,18 @@ const ServicesPage: React.FC = () => {
                 >
                   <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                     <Link to={`/services/${service.id}`} className="block group">
-                      <div className="relative">
+                    <div className="relative">
                         <div className="rounded-lg overflow-hidden shadow-custom-lg aspect-video group-hover:shadow-custom-xl transition-shadow duration-300">
-                          <img
-                            src={service.image}
-                            alt={`${service.title} - Professional building services by Kent Building & Construction`}
+                        <img
+                          src={service.image}
+                          alt={`${service.title} - Professional building services by Kent Building & Construction`}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                          />
-                        </div>
-                        <div className="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-md group-hover:shadow-lg transition-shadow duration-300">
-                          <service.icon size={32} className="text-primary-600" />
-                        </div>
+                        />
                       </div>
+                        <div className="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-md group-hover:shadow-lg transition-shadow duration-300">
+                        <service.icon size={32} className="text-primary-600" />
+                      </div>
+                    </div>
                     </Link>
                   </div>
 
@@ -303,8 +303,8 @@ const ServicesPage: React.FC = () => {
                         Learn More
                       </Link>
                       <Link to="/contact" className="btn btn-secondary">
-                        Enquire About This Service
-                      </Link>
+                      Enquire About This Service
+                    </Link>
                     </div>
                   </div>
                 </motion.div>

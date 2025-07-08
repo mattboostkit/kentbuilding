@@ -31,7 +31,7 @@ const ContactCTA: React.FC = () => {
                     href="tel:07766141811" 
                     className="text-primary-600 font-medium hover:text-primary-700 text-lg"
                   >
-                    07766 141 811
+                    07766 141811
                   </a>
                 </div>
               </div>
@@ -44,10 +44,10 @@ const ContactCTA: React.FC = () => {
                   <h4 className="text-xl font-semibold text-gray-900 mb-2">Email Us</h4>
                   <p className="text-gray-600 mb-2">For detailed inquiries or to request a quote</p>
                   <a 
-                    href="mailto:info@kentconstruction.co.uk" 
+                    href="mailto:spencer@kentbuildingandconstruction.co.uk" 
                     className="text-primary-600 font-medium hover:text-primary-700 text-lg"
                   >
-                    info@kentconstruction.co.uk
+                    spencer@kentbuildingandconstruction.co.uk
                   </a>
                 </div>
               </div>

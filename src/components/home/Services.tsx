@@ -100,7 +100,7 @@ const Services: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="section-title">Our <span className="text-primary-600">Services</span></h2>
           <p className="section-subtitle">
-            We provide a comprehensive range of specialist building services across Kent, delivered by skilled professionals to the highest standards.
+            We provide a comprehensive range of specialist building services across the South East, delivered by skilled professionals to the highest standards.
           </p>
         </div>
 

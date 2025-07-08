@@ -10,11 +10,13 @@ const NewBuildsPage: React.FC = () => {
 
   // Gallery images array
   const galleryImages = [
-    'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-1.jpg?updatedAt=1751969384287',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-2.jpg?updatedAt=1751969384246',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-3.jpg?updatedAt=1751969384177',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-4.jpg?updatedAt=1751969384158',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-5.jpg?updatedAt=1751969384078',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-6.jpg?updatedAt=1751969384260',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-7.jpg?updatedAt=1751969642061',
   ];
 
   const openGallery = (index: number) => {
@@ -35,7 +37,7 @@ const NewBuildsPage: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Custom new build homes in Kent and Sussex. Bespoke house construction, eco-friendly builds, and modern home design. From concept to completion, we build your dream home.');
+      metaDescription.setAttribute('content', 'Custom new build homes in the South East. Bespoke house construction, eco-friendly builds, and modern home design. From concept to completion, we build your dream home. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk');
     }
 
     window.scrollTo(0, 0);
@@ -75,14 +77,14 @@ const NewBuildsPage: React.FC = () => {
     <>
       {/* Hero Section */}
       <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-7.jpg?updatedAt=1751969642061')] bg-cover bg-center opacity-20"></div>
         <div className="container-custom relative z-10 text-center">
           <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
             New <span className="text-primary-300">Builds</span>
           </h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
             Create your dream home from the ground up. Our bespoke new build service combines innovative design, 
-            quality craftsmanship, and sustainable construction to deliver exceptional homes.
+            quality craftsmanship, and sustainable construction to deliver exceptional homes. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk
           </p>
         </div>
       </section>
@@ -145,7 +147,7 @@ const NewBuildsPage: React.FC = () => {
               viewport={{ once: true, margin: "-100px" }}
             >
               <img 
-                src="https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914"
+                src="https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-7.jpg?updatedAt=1751969642061"
                 alt="New Build Home"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />
@@ -225,10 +227,10 @@ const NewBuildsPage: React.FC = () => {
                 className="btn btn-primary flex items-center justify-center"
               >
                 <Phone size={18} className="mr-2" />
-                Call 07766 141 811
+                Call 07766 141811
               </a>
               <a
-                href="mailto:info@kentconstruction.co.uk"
+                href="mailto:spencer@kentbuildingandconstruction.co.uk"
                 className="btn btn-secondary flex items-center justify-center"
               >
                 <Mail size={18} className="mr-2" />

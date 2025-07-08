@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+git statusimport React, { useEffect } from 'react';
 import Hero from '../components/home/Hero';
 import StatsSection from '../components/home/StatsSection';
 import Services from '../components/home/Services';

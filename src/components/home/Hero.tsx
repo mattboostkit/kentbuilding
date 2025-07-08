@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Hero: React.FC = () => {
   const staticSlide = {
     image: 'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
-    title: 'Building Excellence across Kent since 2008',
+    title: 'Building Excellence across the South East since 2008. Exceptional craftsmanship and superior service for every project',
   };
 
   return (

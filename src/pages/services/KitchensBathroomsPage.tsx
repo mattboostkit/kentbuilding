@@ -10,11 +10,13 @@ const KitchensBathroomsPage: React.FC = () => {
 
   // Gallery images array
   const galleryImages = [
-    'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-1.jpg?updatedAt=1751969114597',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-2.jpg?updatedAt=1751969114651',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-3.jpg?updatedAt=1751969114611',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-4.jpg?updatedAt=1751969114619',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-5.jpg?updatedAt=1751969114562',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-6.jpg?updatedAt=1751969114693',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-7.jpg?updatedAt=1751969114619',
   ];
 
   const openGallery = (index: number) => {
@@ -35,7 +37,7 @@ const KitchensBathroomsPage: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional kitchen and bathroom design and installation in Kent and Sussex. Bespoke kitchens, luxury bathrooms, and complete room renovations. Transform your home.');
+      metaDescription.setAttribute('content', 'Professional kitchen and bathroom design and installation in the South East. Bespoke kitchens, luxury bathrooms, and complete room renovations. Transform your home. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk');
     }
 
     window.scrollTo(0, 0);
@@ -75,14 +77,14 @@ const KitchensBathroomsPage: React.FC = () => {
     <>
       {/* Hero Section */}
       <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-6.jpg?updatedAt=1751969114693')] bg-cover bg-center opacity-20"></div>
         <div className="container-custom relative z-10 text-center">
           <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
             Kitchens and <span className="text-primary-300">Bathrooms</span>
           </h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
             Transform your home with bespoke kitchen and bathroom design. From concept to completion, 
-            we create beautiful, functional spaces that enhance your lifestyle and property value.
+            we create beautiful, functional spaces that enhance your lifestyle and property value. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk
           </p>
         </div>
       </section>
@@ -144,7 +146,7 @@ const KitchensBathroomsPage: React.FC = () => {
               viewport={{ once: true, margin: "-100px" }}
             >
               <img 
-                src="https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914"
+                src="https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-6.jpg?updatedAt=1751969114693"
                 alt="Kitchen and Bathroom Project"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />
@@ -224,10 +226,10 @@ const KitchensBathroomsPage: React.FC = () => {
                 className="btn btn-primary flex items-center justify-center"
               >
                 <Phone size={18} className="mr-2" />
-                Call 07766 141 811
+                Call 07766 141811
               </a>
               <a
-                href="mailto:info@kentconstruction.co.uk"
+                href="mailto:spencer@kentbuildingandconstruction.co.uk"
                 className="btn btn-secondary flex items-center justify-center"
               >
                 <Mail size={18} className="mr-2" />
