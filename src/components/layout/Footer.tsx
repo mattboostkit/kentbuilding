@@ -4,9 +4,6 @@ import {
   Phone,
   Mail,
   MapPin,
-  Facebook,
-  Instagram,
-  Linkedin,
   ArrowRight
 } from 'lucide-react';
 
@@ -32,17 +29,6 @@ const Footer: React.FC = () => {
             <p className="mt-5 text-gray-400 leading-relaxed">
               Building Excellence across the South East since 2008. Exceptional craftsmanship and superior service for every project.
             </p>
-            <div className="flex space-x-5 mt-8">
-              <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Facebook size={22} />
-              </a>
-              <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Instagram size={22} />
-              </a>
-              <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-primary-400 transition-colors">
-                <Linkedin size={22} />
-              </a>
-            </div>
           </div>
 
           {/* Column 2 - Quick Links */}
