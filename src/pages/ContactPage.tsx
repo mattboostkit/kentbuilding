@@ -65,7 +65,7 @@ const ContactPage: React.FC = () => {
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Contact Kent Building & Construction for all your building needs. Request a free quote for period property restoration, home renovations, extensions, and more. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk');
+      metaDescription.setAttribute('content', 'Contact Kent Building & Construction for all your building needs. Request a free quote for period property restoration, home renovations, extensions, and more. Serving Kent and Sussex. FMB member since 2012. Call 07766 141811.');
     }
 
     // Scroll to top on page load

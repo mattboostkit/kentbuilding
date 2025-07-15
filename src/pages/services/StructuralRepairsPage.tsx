@@ -39,7 +39,7 @@ const StructuralRepairsPage: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional structural repairs in Kent and Sussex. Foundation repairs, wall stabilization, roof repairs, and structural reinforcement. Expert structural engineering solutions.');
+      metaDescription.setAttribute('content', 'Professional structural repairs in Kent and Sussex. Foundation repairs, wall stabilisation, roof repairs, and structural reinforcement. Expert structural engineering solutions. FMB member with 20+ years experience. Call 07766 141811.');
     }
 
     window.scrollTo(0, 0);

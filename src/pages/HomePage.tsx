@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Kent Building & Construction - Specialist building services across Kent with over 20 years of experience. Period property restoration, home renovations, extensions, and oak framed buildings.');
+      metaDescription.setAttribute('content', 'Kent Building & Construction Ltd - Specialist building services across Kent and Sussex with over 20 years of experience. Period property restoration, listed building restoration, home extensions, new builds, landscaping, and structural repairs. FMB member since 2012. Call 07766 141811 for a free quote.');
     }
 
     // Scroll to top on page load

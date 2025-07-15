@@ -43,7 +43,7 @@ const LandscapingAndPatiosPage: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional landscaping and patio services in Kent and Sussex. Patios, driveways, pathways, retaining walls, and outdoor construction. Transform your outdoor space.');
+      metaDescription.setAttribute('content', 'Professional landscaping and patio services in Kent and Sussex. Patios, driveways, pathways, retaining walls, and outdoor construction. Transform your outdoor space. FMB member with 20+ years experience. Call 07766 141811.');
     }
 
     window.scrollTo(0, 0);

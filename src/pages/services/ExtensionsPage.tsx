@@ -40,7 +40,7 @@ const ExtensionsPage: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional house extensions in the South East. Single and double storey extensions, conservatories, and home improvements. Free consultation and quotes available. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk');
+      metaDescription.setAttribute('content', 'Professional house extensions in Kent and Sussex. Single and double storey extensions, conservatories, kitchen extensions, and home improvements. FMB member with 20+ years experience. Free consultation available. Call 07766 141811.');
     }
 
     window.scrollTo(0, 0);

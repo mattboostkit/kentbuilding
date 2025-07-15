@@ -41,7 +41,7 @@ const HeritageListedPage: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Specialist heritage building and listed building restoration in Kent and Sussex. Grade I, II, and II* listed building expertise. Conservation work and heritage building maintenance.');
+      metaDescription.setAttribute('content', 'Specialist heritage building and listed building restoration in Kent and Sussex. Grade I, II, and II* listed building expertise. Conservation work and heritage building maintenance. FMB member with 20+ years experience. Call 07766 141811.');
     }
 
     window.scrollTo(0, 0);

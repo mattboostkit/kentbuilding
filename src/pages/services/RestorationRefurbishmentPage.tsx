@@ -43,7 +43,7 @@ const RestorationRefurbishmentPage: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional restoration and refurbishment services in the South East. Period property restoration, home renovations, and building refurbishment. Expert craftsmanship guaranteed. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk');
+      metaDescription.setAttribute('content', 'Professional restoration and refurbishment services in Kent and Sussex. Period property restoration, Victorian and Edwardian renovations, heritage building expertise. FMB member with 20+ years experience. Call 07766 141811.');
     }
 
     window.scrollTo(0, 0);

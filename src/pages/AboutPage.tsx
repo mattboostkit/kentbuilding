@@ -53,7 +53,7 @@ const AboutPage: React.FC = () => {
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Learn about Spencer Ellis and the Kent Building & Construction team. With over 20 years of experience delivering high-quality building projects across the South East.');
+      metaDescription.setAttribute('content', 'Learn about Spencer Ellis and the Kent Building & Construction team. With over 20 years of experience delivering high-quality building projects across Kent and Sussex. FMB member since 2012. Call 07766 141811.');
     }
 
     // Scroll to top on page load

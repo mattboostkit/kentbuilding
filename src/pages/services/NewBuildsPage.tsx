@@ -37,7 +37,7 @@ const NewBuildsPage: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Custom new build homes in the South East. Bespoke house construction, eco-friendly builds, and modern home design. From concept to completion, we build your dream home. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk');
+      metaDescription.setAttribute('content', 'Custom new build homes in Kent and Sussex. Bespoke house construction, eco-friendly builds, and modern home design. From concept to completion, we build your dream home. FMB member with 20+ years experience. Call 07766 141811.');
     }
 
     window.scrollTo(0, 0);

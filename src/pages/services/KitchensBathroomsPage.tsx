@@ -46,7 +46,7 @@ const KitchensBathroomsPage: React.FC = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional kitchen and bathroom design and installation in the South East. Bespoke kitchens, luxury bathrooms, and complete room renovations. Transform your home. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk');
+      metaDescription.setAttribute('content', 'Professional kitchen and bathroom design and installation in Kent and Sussex. Bespoke kitchens, luxury bathrooms, and complete room renovations. Transform your home. FMB member with 20+ years experience. Call 07766 141811.');
     }
 
     window.scrollTo(0, 0);

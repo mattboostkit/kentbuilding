@@ -58,7 +58,7 @@ const logoColorUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/KBAC%20V2.
             <img 
               src={scrolled ? logoColorUrl : logoWhiteUrl} 
               alt="Kent Building & Construction Logo" 
-              className="h-12 sm:h-16 md:h-20 lg:h-24 transition-all duration-300" 
+              className="h-14 sm:h-16 md:h-20 lg:h-24 transition-all duration-300" 
             />
           </Link>
         </div>
@@ -93,11 +93,11 @@ const logoColorUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/KBAC%20V2.
         </div>
 
         {/* Mobile menu button */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex items-center ml-4">
           <button
             onClick={toggleMenu}
             aria-label={isOpen ? "Close menu" : "Open menu"}
-            className={`p-2 ${scrolled ? 'text-gray-800' : 'text-white'}`}
+            className={`p-3 ${scrolled ? 'text-gray-800' : 'text-white'}`}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
