@@ -58,7 +58,7 @@ const logoColorUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/KBAC%20V2.
             <img 
               src={scrolled ? logoColorUrl : logoWhiteUrl} 
               alt="Kent Building & Construction Logo" 
-              className="h-17 sm:h-24 md:h-29 transition-all duration-300" 
+              className="h-12 sm:h-16 md:h-20 lg:h-24 transition-all duration-300" 
             />
           </Link>
         </div>
@@ -125,7 +125,7 @@ const logoColorUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/KBAC%20V2.
             <img 
               src={logoColorUrl} 
               alt="Kent Building & Construction Logo" 
-              className="h-24" 
+              className="h-16 sm:h-20" 
             />
           </div>
           <div className="flex-1">
