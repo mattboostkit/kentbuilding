@@ -45,7 +45,7 @@ const About: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <div className="w-14 h-14 rounded-full bg-secondary-600 flex items-center justify-center mr-5">
-                  <span className="text-white font-bold text-xl">250+</span>
+                  <span className="text-white font-bold text-xl">150+</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 text-lg">Projects Completed</h4>
@@ -66,7 +66,7 @@ const About: React.FC = () => {
 
             <div className="mt-8 text-gray-600 space-y-5 leading-relaxed">
               <p>
-                My name is Spencer Ellis and I am the proud owner of Kent Building and Construction ltd. At Kent Building and Construction, we have over 20 years of experience and offer only the very highest possible quality at the most affordable pricing.
+                My name is Spencer Ellis and I am the proud owner of Kent Building and Construction LTD. At Kent Building and Construction, we have over 20 years of experience and offer only the very highest possible quality at the most affordable prices.
               </p>
               <p>
                 As home owners with families ourselves we appreciate how daunting the thought of builders in your home or business can be and respect your property and care for your project as much as you do yourself. We offer only the highest possible quality of workmanship and would be delighted to show you any number of examples of this should you wish to join us to inspect any of our previous projects.

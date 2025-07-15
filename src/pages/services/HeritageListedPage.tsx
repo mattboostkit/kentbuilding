@@ -17,6 +17,10 @@ const HeritageListedPage: React.FC = () => {
     'https://ik.imagekit.io/boostkit/Kent%20Building/Heritage%20and%20Listed/Heritage-4.jpg?updatedAt=1751887980803',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Heritage%20and%20Listed/Heritage-5.jpg?updatedAt=1751887980991',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Heritage%20and%20Listed/Heritage-7.jpg?updatedAt=1751887980986',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Heritage%20and%20Listed/Heritage-8.jpg?updatedAt=1752571684471',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Heritage%20and%20Listed/Heritage-9.jpg?updatedAt=1752571684481',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Heritage%20and%20Listed/Heritage-10.jpg?updatedAt=1752571684520',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Heritage%20and%20Listed/Heritage-11.jpg?updatedAt=1752571684379',
   ];
 
   const openGallery = (index: number) => {

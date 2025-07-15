@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import {
   Phone,
   Mail,
-  MapPin,
   ArrowRight
 } from 'lucide-react';
 
@@ -21,7 +20,7 @@ const Footer: React.FC = () => {
             <Link to="/" className="inline-block">
               <img 
                 src={logoWhiteUrl} 
-                alt="Kent Building & Construction Logo" 
+                alt="Kent Building & Construction Ltd Logo" 
                 className="h-14" 
               />
             </Link>
@@ -85,12 +84,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
             <ul className="space-y-5">
-              <li className="flex">
-                <MapPin className="mr-4 text-primary-400 flex-shrink-0" size={20} />
-                <span className="text-gray-400">
-                  We don't have a physical office location as we work directly from our clients' sites across the South East.
-                </span>
-              </li>
+
               <li className="flex">
                 <Phone className="mr-4 text-primary-400 flex-shrink-0" size={20} />
                 <a
@@ -120,7 +114,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-14 pt-10">
           <div className="flex flex-wrap items-center justify-center gap-10">
             <div className="text-center flex flex-col items-center">
-              <img src="https://ik.imagekit.io/boostkit/Kent%20Building/FMB.svg?updatedAt=1747756996556" alt="Federation of Master Builders Logo" className="h-10 mb-2" />
+              <img src="https://ik.imagekit.io/boostkit/Kent%20Building/FMB.svg?updatedAt=1747756996556" alt="Federation of Master Builders Logo" className="h-20 mb-2" />
               <p className="text-sm text-gray-500 mb-1">Federation of Master Builders</p>
               <p className="text-sm text-gray-400">Registration No: 71497</p>
             </div>
@@ -137,7 +131,7 @@ const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="text-center text-gray-500 text-sm mt-10">
-          <p>&copy; {currentYear} Kent Building & Construction. All rights reserved.</p>
+          <p>&copy; {currentYear} Kent Building & Construction Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

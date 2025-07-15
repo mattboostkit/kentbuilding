@@ -10,12 +10,16 @@ const ExtensionsPage: React.FC = () => {
 
   // Gallery images array
   const galleryImages = [
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-6.jpg?updatedAt=1751885526800',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-3.jpg?updatedAt=1751885526967',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-1.jpg?updatedAt=1751885526986',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-2.jpg?updatedAt=1751885526917',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-4.jpg?updatedAt=1751885526859',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-5.jpg?updatedAt=1751885526781',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-6.jpg?updatedAt=1751885526800',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-7.jpg?updatedAt=1752571544460',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-8.jpg?updatedAt=1752571544491',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-9.jpg?updatedAt=1752571544557',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-10.jpg?updatedAt=1752571544534',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-11.jpg?updatedAt=1752571544603',
   ];
 
   const openGallery = (index: number) => {
@@ -55,12 +59,12 @@ const ExtensionsPage: React.FC = () => {
 
   const processSteps = [
     {
-      title: 'Initial Consultation',
-      description: 'We visit your property to discuss your requirements and assess the feasibility of your extension project.'
+      title: 'Initial consultation',
+      description: 'We visit your property to discuss your requirements. We can work with your chosen architect or recommend one to you (if necessary).'
     },
     {
       title: 'Design & Planning',
-      description: 'Our team creates detailed designs and handles all planning permissions and building regulations.'
+      description: 'Our team can work with you to create design ideas. We can also work with your chosen architect to relay these and ensure all necessary planning and building regulations are adhered to.'
     },
     {
       title: 'Construction',
@@ -144,7 +148,7 @@ const ExtensionsPage: React.FC = () => {
               viewport={{ once: true, margin: "-100px" }}
             >
               <img 
-                src="https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-3.jpg?updatedAt=1751885526967"
+                src="https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-6.jpg?updatedAt=1751885526800"
                 alt="House Extension Project"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />

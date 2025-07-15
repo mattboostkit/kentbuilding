@@ -17,6 +17,12 @@ const LandscapingAndPatiosPage: React.FC = () => {
     'https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-4.jpg?updatedAt=1751886599283',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-6.jpg?updatedAt=1751886599378',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-7.jpg?updatedAt=1751886599281',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-8.jpg?updatedAt=1752572003058',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-9.jpg?updatedAt=1752572003052',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-10.jpg?updatedAt=1752572003012',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-11.jpg?updatedAt=1752572003068',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-12.jpg?updatedAt=1752572002995',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-13.jpg?updatedAt=1752572002948',
   ];
 
   const openGallery = (index: number) => {
@@ -61,15 +67,15 @@ const LandscapingAndPatiosPage: React.FC = () => {
     },
     {
       title: 'Design & Planning',
-      description: 'Create detailed landscaping plans that complement your property and meet your requirements.'
+      description: 'Create detailed landscaping plans that complement your property and change your lifestyle.'
     },
     {
       title: 'Construction',
-      description: 'Expert installation using quality materials and proper construction techniques for lasting results.'
+      description: 'Expert installation using quality materials and construction techniques for lasting results.'
     },
     {
       title: 'Completion',
-      description: 'Final inspection and handover with maintenance advice and warranty information.'
+      description: 'Final inspection and handover with maintenance advice.'
     }
   ];
 
@@ -77,7 +83,7 @@ const LandscapingAndPatiosPage: React.FC = () => {
     <>
       {/* Hero Section */}
       <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-5.jpg?updatedAt=1751886599370')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-7.jpg?updatedAt=1751886599281')] bg-cover bg-center opacity-20"></div>
         <div className="container-custom relative z-10 text-center">
           <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
             Landscaping & <span className="text-primary-300">Patios</span>

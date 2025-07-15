@@ -13,10 +13,10 @@ const NewBuildsPage: React.FC = () => {
     'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-1.jpg?updatedAt=1751969384287',
     'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-2.jpg?updatedAt=1751969384246',
     'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-3.jpg?updatedAt=1751969384177',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-4.jpg?updatedAt=1751969384158',
     'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-5.jpg?updatedAt=1751969384078',
     'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-6.jpg?updatedAt=1751969384260',
     'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-7.jpg?updatedAt=1751969642061',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-6.jpg?updatedAt=1751885526800',
   ];
 
   const openGallery = (index: number) => {
@@ -84,7 +84,10 @@ const NewBuildsPage: React.FC = () => {
           </h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
             Create your dream home from the ground up. Our bespoke new build service combines innovative design, 
-            quality craftsmanship, and sustainable construction to deliver exceptional homes. Call 07766 141811 or email spencer@kentbuildingandconstruction.co.uk
+            quality craftsmanship, and sustainable construction to deliver exceptional homes.
+          </p>
+          <p className="text-lg text-primary-100 max-w-2xl mx-auto mt-4">
+            Call 07766 141811 or email <Link to="/contact" className="text-primary-300 hover:text-white underline">spencer@kentbuildingandconstruction.co.uk</Link>
           </p>
         </div>
       </section>

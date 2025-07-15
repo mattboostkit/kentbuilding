@@ -24,7 +24,7 @@ const services = [
     id: 'restoration-refurbishment',
     title: 'Restoration and Refurbishments',
     tagline: 'Breathe new life into your property',
-    description: 'Our Restoration & Refurbishments services are designed to breathe new life into your property. We handle complete transformations, combining quality craftsmanship with innovative solutions to modernize and enhance your space.',
+    description: 'Our Restoration & Refurbishments services are designed to breathe new life into your property. We handle complete transformations, combining quality craftsmanship with innovative solutions to modernise and enhance your space.',
     features: [
       'Complete interior and exterior renovations',
       'Modernisation and layout reconfiguration',
@@ -129,7 +129,7 @@ const benefits = [
   },
   {
     title: 'Timely Delivery',
-    description: 'We prioritize completing projects on schedule without compromising quality.',
+    description: 'We prioritise completing projects on schedule without compromising quality.',
     icon: Clock,
   },
 ];
@@ -191,7 +191,7 @@ const ServicesPage: React.FC = () => {
         "name": "Are you experienced in period property restoration?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we have over 20 years of experience in restoring period and listed buildings. Our team specializes in preserving historical features while incorporating modern comforts, using traditional materials and techniques."
+          "text": "Yes, we have over 20 years of experience in restoring period and listed buildings. Our team specialises in preserving historical features while incorporating modern comforts, using traditional materials and techniques."
         }
       },
       {

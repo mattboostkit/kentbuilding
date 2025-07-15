@@ -5,6 +5,30 @@ import { motion } from 'framer-motion';
 const testimonials = [
   {
     id: 1,
+    name: 'Van Asselt family',
+    location: 'Fletching & Saint-Tropez',
+    testimonial: 'KBC beautifully executed two diverse projects—an oak-barn extension and a villa refurbishment in France. Meticulous workmanship and clear communication delivered homes we\'re proud of. Highly recommended.',
+    rating: 5,
+    project: 'International Projects',
+  },
+  {
+    id: 2,
+    name: 'Hanna Mashford',
+    location: 'Groombridge',
+    testimonial: 'Spencer at Kent Building & Construction and his employees were superb in the work they did at my house. They were punctual, polite and were a pleasure to have working here. Spencer was extremely knowledgable and helpful. He offered guidance and advice on certain works. His cost was reasonable and true to his quotation. His workmanship was excellent. I would not hesitate in having him undertake further work and would certainly recommend him to anyone looking for a decent builder.',
+    rating: 5,
+    project: 'Home Renovation',
+  },
+  {
+    id: 3,
+    name: 'John & Sally Turner',
+    location: 'Langton Green',
+    testimonial: 'Excellent work on extensive renovation inside and outside the house. Kitchen and Utility room were redesigned with a joining wall removed, new ceiling and tiled floor relaid. Reception hall stone floor removed and wooden floor laid, with existing wooden floors sanded and resurfaced. Walls and ceilings in bedrooms, dining room, lounge and hallway redecorated with stairs and banister also renovated. All external wooden windows sanded and resurfaced. Very high standard on all work and would highly recommend KBC Ltd.',
+    rating: 5,
+    project: 'Extensive Renovation',
+  },
+  {
+    id: 4,
     name: 'Jonathan Kent',
     location: 'Bewl Water',
     testimonial: 'This first-phase barn restoration involved careful dismantling, reassembling on new foundations, insulating, reroofing and replacing major timbers. Spence and team solved problems, controlled costs and delivered superb stone, brick and oak-frame work. Even the conservation officer was impressed. Highly recommended.',
@@ -12,7 +36,7 @@ const testimonials = [
     project: 'Barn Restoration',
   },
   {
-    id: 2,
+    id: 5,
     name: 'Mike',
     location: 'Matfield',
     testimonial: 'Spencer\'s team renovated our 150-year-old house and basement reliably and honestly. When issues arose, he clearly explained options. We\'re very happy with the quality and transparency.',
@@ -20,7 +44,7 @@ const testimonials = [
     project: 'Period Property Renovation',
   },
   {
-    id: 3,
+    id: 6,
     name: 'Ellie',
     location: 'Tonbridge',
     testimonial: 'Kent Building & Construction listened, suggested improvements and always delivered exactly what I wanted. Honest, transparent and excellent finish. I\'d happily use and recommend them again.',
@@ -28,7 +52,7 @@ const testimonials = [
     project: 'Home Renovation',
   },
   {
-    id: 4,
+    id: 7,
     name: 'Kathy & Andrew',
     location: 'Hackney',
     testimonial: 'Spencer repaired our Victorian house\'s structure and damp. Despite unexpected extra work, he warned us in advance and included us in every decision. Spencer, Nathan and Robert were punctual, hardworking and professional. Our façade is now structurally sound—highly recommended.',
@@ -36,7 +60,7 @@ const testimonials = [
     project: 'Victorian House Restoration',
   },
   {
-    id: 5,
+    id: 8,
     name: 'Graham Wykes',
     location: 'Tunbridge Wells & Virginia Water',
     testimonial: 'On five high-value properties Spencer consistently fixed underlying issues to the highest standard, delivering excellent finishes. I\'ve recommended him to friends, all of whom appreciated his skill and reliability.',
@@ -44,7 +68,7 @@ const testimonials = [
     project: 'High-Value Property Renovation',
   },
   {
-    id: 6,
+    id: 9,
     name: 'Sarah Garrett',
     location: 'Ninfield',
     testimonial: 'Spencer was professional, friendly and committed. When project scope changed, he stayed engaged, offered clear explanations and solution options. His pride in quality and exemplary customer service make him highly recommendable.',
@@ -52,7 +76,7 @@ const testimonials = [
     project: 'Building Project',
   },
   {
-    id: 7,
+    id: 10,
     name: 'Fiona, Andy & Alex Pocock',
     location: 'Horsmonden',
     testimonial: 'KBC took on our challenging project mid-stream, working through COVID to source materials and maintain progress. Their suggestions enhanced our build. Professional, friendly and always reachable—we\'ve already recommended them and will use them again.',
@@ -60,20 +84,12 @@ const testimonials = [
     project: 'Complex Build Project',
   },
   {
-    id: 8,
+    id: 11,
     name: 'Mrs Habershon',
     location: 'Hand Cross',
     testimonial: 'After our builder withdrew, Spencer seamlessly took over our kitchen/diner build and alterations. He planned expertly, worked hard, listened to our ideas and kept things running smoothly. A pleasure to work with, especially supporting my disabled husband.',
     rating: 5,
     project: 'Kitchen Extension',
-  },
-  {
-    id: 9,
-    name: 'van Asselt family',
-    location: 'Fletching & Saint-Tropez',
-    testimonial: 'KBC beautifully executed two diverse projects—an oak-barn extension and a villa refurbishment in France. Meticulous workmanship and clear communication delivered homes we\'re proud of. Highly recommended.',
-    rating: 5,
-    project: 'International Projects',
   },
 ];
 

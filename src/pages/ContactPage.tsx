@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import {
   Phone,
   Mail,
-  MapPin,
   Clock,
   Send,
   CheckCircle,
@@ -149,17 +148,7 @@ const ContactPage: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mr-4 flex-shrink-0">
-                    <MapPin className="text-primary-600" size={20} />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900">Address</h4>
-                                    <p className="text-gray-600">
-                  We don't have a physical office location as we work directly from our clients' sites. We're based in the South East and serve the surrounding areas.
-                </p>
-                  </div>
-                </div>
+
 
                 <div className="flex items-start">
                   <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mr-4 flex-shrink-0">
@@ -177,29 +166,26 @@ const ContactPage: React.FC = () => {
               <div className="mt-8">
                 <h4 className="text-lg font-semibold text-gray-900 mb-4">Service Areas</h4>
                 <p className="text-gray-600 mb-4">
-                  We provide construction services throughout the South East, centered around Wadhurst with a 30-mile service radius.
+                  We provide construction services throughout the South East, centered around Wadhurst with a 30-mile service radius including the following towns and surrounding areas:
                 </p>
 
-                <p className="text-gray-600 mb-2">
-                  Key areas we serve include:
-                </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                   {[
-                    'Wadhurst & surrounding areas',
-                    'Tunbridge Wells & surrounding areas',
-                    'Tonbridge & surrounding areas',
-                    'Sevenoaks & surrounding areas',
-                    'Goudhurst & surrounding areas',
-                    'Crowborough & surrounding areas',
-                    'Paddock Wood & surrounding areas',
-                    'Uckfield & surrounding areas',
-                    'Tenterden & surrounding areas',
-                    'Cranbrook & surrounding areas',
-                    'Hawkhurst & surrounding areas',
-                    'Heathfield & surrounding areas',
-                    'East Grinstead & surrounding areas',
-                    'Haywards Heath & surrounding areas',
-                    'Westerham & surrounding areas',
+                    'Wadhurst',
+                    'Tunbridge Wells',
+                    'Tonbridge',
+                    'Sevenoaks',
+                    'Goudhurst',
+                    'Crowborough',
+                    'Paddock Wood',
+                    'Uckfield',
+                    'Tenterden',
+                    'Cranbrook',
+                    'Hawkhurst',
+                    'Heathfield',
+                    'East Grinstead',
+                    'Haywards Heath',
+                    'Westerham',
                   ].map((area) => (
                     <div key={area} className="flex items-center">
                       <div className="w-2 h-2 rounded-full bg-primary-600 mr-2"></div>
@@ -379,7 +365,7 @@ const ContactPage: React.FC = () => {
                   </button>
 
                   <p className="text-gray-500 text-sm mt-4">
-                    By submitting this form, you agree to our privacy policy. We'll respond to your inquiry within 24 hours.
+                    By submitting this form, you agree to our privacy policy. We'll respond to your enquiry within 48 hours.
                   </p>
                 </form>
               </div>
@@ -415,9 +401,7 @@ const ContactPage: React.FC = () => {
               <div className="flex flex-wrap md:flex-nowrap justify-between items-center">
                 <div className="mb-4 md:mb-0">
                   <h3 className="text-xl font-bold text-gray-900 mb-1">Kent Building & Construction</h3>
-                  <p className="text-gray-600">
-                    We don't have a physical office location as we work directly from our clients' sites across the South East.
-                  </p>
+
                 </div>
 
                 <div className="flex space-x-4">

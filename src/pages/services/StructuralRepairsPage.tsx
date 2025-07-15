@@ -46,7 +46,7 @@ const StructuralRepairsPage: React.FC = () => {
   }, []);
 
   const features = [
-    'Foundation repairs and stabilization',
+    'Foundation repairs and stabilisation',
     'Wall and ceiling repairs',
     'Roof structure repairs',
     'Structural reinforcement',
@@ -86,7 +86,7 @@ const StructuralRepairsPage: React.FC = () => {
           </h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
             Expert structural repairs and reinforcement to ensure your property's safety and stability. 
-            From foundation issues to roof repairs, we provide comprehensive structural solutions.
+            From foundation issues to structural failures, we provide comprehensive structural solutions.
           </p>
         </div>
       </section>

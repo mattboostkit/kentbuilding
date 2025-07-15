@@ -170,7 +170,7 @@ const ContactCTA: React.FC = () => {
               </button>
               
               <p className="text-gray-500 text-sm mt-5">
-                By submitting this form, you agree to our privacy policy. We'll respond to your inquiry within 24 hours.
+                By submitting this form, you agree to our privacy policy. We'll respond to your enquiry within 48 hours.
               </p>
             </form>
           </motion.div>

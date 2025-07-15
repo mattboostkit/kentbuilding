@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, BadgeCheck, Hammer, Verified } from 'lucide-react';
+import { Shield, BadgeCheck, Verified } from 'lucide-react';
 
 const AccreditationsBanner: React.FC = () => {
   const accreditations = [
@@ -21,9 +21,9 @@ const AccreditationsBanner: React.FC = () => {
       description: 'Approved Contractor',
     },
     {
-      icon: Hammer,
-      title: 'Construction Line',
-      description: 'Gold Member Status',
+      icon: Verified,
+      title: 'Master Builders Award',
+      description: 'Runner up for Heavenly Builder of the Year',
     },
     {
       icon: Verified,
@@ -38,7 +38,7 @@ const AccreditationsBanner: React.FC = () => {
         <div className="text-center mb-8">
           <h3 className="text-2xl font-bold text-gray-900">Our Accreditations & Certifications</h3>
           <p className="text-gray-600 mt-2">
-            We're proud to be recognized by these industry-leading organizations
+            We're proud to be recognised by these industry-leading organisations
           </p>
         </div>
         

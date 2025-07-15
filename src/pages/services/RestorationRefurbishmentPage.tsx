@@ -14,9 +14,15 @@ const RestorationRefurbishmentPage: React.FC = () => {
     'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-1.jpg?updatedAt=1751887634004',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-2.jpg?updatedAt=1751887633973',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-3.jpg?updatedAt=1751887634038',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-4.jpg?updatedAt=1751887634038',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-5.jpg?updatedAt=1751887634026',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-7.jpg?updatedAt=1751887634031',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-8.jpg?updatedAt=1752572136249',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-9.jpg?updatedAt=1752572136229',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-10.jpg?updatedAt=1752572136180',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-11.jpg?updatedAt=1752572136307',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-12.jpg?updatedAt=1752572136357',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-13.jpg?updatedAt=1752572136190',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-14.jpg?updatedAt=1752572136349',
   ];
 
   const openGallery = (index: number) => {
@@ -146,7 +152,7 @@ const RestorationRefurbishmentPage: React.FC = () => {
               viewport={{ once: true, margin: "-100px" }}
             >
               <img 
-                src="https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-6.jpg?updatedAt=1751887634085"
+                src="https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-1.jpg?updatedAt=1751887634004"
                 alt="Restoration Project"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />
