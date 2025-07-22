@@ -8,24 +8,27 @@ const KitchensBathroomsPage: React.FC = () => {
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Gallery images array
+  // Gallery images array - Kitchens first, then Bathrooms
   const galleryImages = [
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-1.jpg?updatedAt=1751969114597',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-2.jpg?updatedAt=1751969114651',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-3.jpg?updatedAt=1751969114611',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-4.jpg?updatedAt=1751969114619',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-5.jpg?updatedAt=1751969114562',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-6.jpg?updatedAt=1751969114693',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-7.jpg?updatedAt=1751969114619',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-8.jpg?updatedAt=1752571786038',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-9.jpg?updatedAt=1752571786117',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-10.jpg?updatedAt=1752571786108',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-11.jpg?updatedAt=1752571785745',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-12.jpg?updatedAt=1752571786103',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-14.jpg?updatedAt=1752571786068',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-15.jpg?updatedAt=1752571786084',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-16.jpg?updatedAt=1752571786023',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-17.jpg?updatedAt=1752571785971',
+    // Kitchen Images
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-2.jpg?updatedAt=1753206851973',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-3.jpg?updatedAt=1753206852046',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-4.jpg?updatedAt=1753206852068',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-5.jpg?updatedAt=1753206852081',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-6.jpg?updatedAt=1753206854617',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-7.jpg?updatedAt=1753206854695',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-8.jpg?updatedAt=1753206854630',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-9.jpg?updatedAt=1753206854734',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-10.jpg?updatedAt=1753206854794',
+    // Bathroom Images
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Bathrooms-1.jpg?updatedAt=1753206851995',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Bathrooms-2.jpg?updatedAt=1753206852049',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Bathrooms-3.jpg?updatedAt=1753206852047',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Bathrooms-4.jpg?updatedAt=1753206851962',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Bathrooms-5.jpg?updatedAt=1753206852054',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Bathrooms-6.jpg?updatedAt=1753206854833',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Bathrooms-7.jpg?updatedAt=1753206854781',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Bathrooms-8.jpg?updatedAt=1753206854678',
   ];
 
   const openGallery = (index: number) => {
@@ -86,7 +89,7 @@ const KitchensBathroomsPage: React.FC = () => {
     <>
       {/* Hero Section */}
       <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-6.jpg?updatedAt=1751969114693')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-8.jpg?updatedAt=1753206854630')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 to-gray-900/60"></div>
         <div className="container-custom relative z-10 text-center">
           <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
@@ -156,7 +159,7 @@ const KitchensBathroomsPage: React.FC = () => {
               viewport={{ once: true, margin: "-100px" }}
             >
               <img 
-                src="https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-6.jpg?updatedAt=1751969114693"
+                src="https://ik.imagekit.io/boostkit/Kent%20Building/Kitchens%20and%20Bathrooms/Kitchens-8.jpg?updatedAt=1753206854630"
                 alt="Kitchen and Bathroom Project"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />

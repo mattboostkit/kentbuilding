@@ -154,7 +154,7 @@ const LandscapingAndPatiosPage: React.FC = () => {
               viewport={{ once: true, margin: "-100px" }}
             >
               <img 
-                src="https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-5.jpg?updatedAt=1751886599370"
+                src="https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-7.jpg?updatedAt=1751886599281"
                 alt="Landscaping and Patio Project"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />

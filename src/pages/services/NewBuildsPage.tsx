@@ -16,7 +16,6 @@ const NewBuildsPage: React.FC = () => {
     'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-5.jpg?updatedAt=1751969384078',
     'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-6.jpg?updatedAt=1751969384260',
     'https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-7.jpg?updatedAt=1751969642061',
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-6.jpg?updatedAt=1751885526800',
   ];
 
   const openGallery = (index: number) => {
