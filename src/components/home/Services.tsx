@@ -95,7 +95,7 @@ const ServiceCard: React.FC<{
 
 const Services: React.FC = () => {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-16 bg-gray-50">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="section-title">Our <span className="text-primary-600">Services</span></h2>

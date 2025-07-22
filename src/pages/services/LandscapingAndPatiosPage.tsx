@@ -83,7 +83,8 @@ const LandscapingAndPatiosPage: React.FC = () => {
     <>
       {/* Hero Section */}
       <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-7.jpg?updatedAt=1751886599281')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Landscaping%20and%20Patios/Landscaping-7.jpg?updatedAt=1751886599281')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 to-gray-900/60"></div>
         <div className="container-custom relative z-10 text-center">
           <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
             Landscaping & <span className="text-primary-300">Patios</span>

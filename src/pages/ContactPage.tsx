@@ -14,7 +14,8 @@ import { motion } from 'framer-motion';
 const ContactBanner: React.FC = () => {
   return (
     <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-              <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914')] bg-cover bg-center opacity-20"></div>
+              <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/New%20Builds/New-Build-7.jpg?updatedAt=1751969642061')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 to-gray-900/60"></div>
       <div className="container-custom relative z-10 text-center">
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           Contact <span className="text-primary-300">Us</span>
@@ -386,7 +387,7 @@ const ContactPage: React.FC = () => {
           <div className="bg-white rounded-lg shadow-custom-lg overflow-hidden">
             <div className="h-96 w-full">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14213.474287033494!2d0.06757525671006759!3d50.96789577496834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df6121da6b5715%3A0x1f5dc28a069b7b25!2sUckfield%20TN22%205QD!5e0!3m2!1sen!2suk!4v1751879648801!5m2!1sen!2suk" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.1234567890123!2d0.12345678901234567!3d51.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df1234567890123%3A0x1234567890123456!2sTN5%206HL!5e0!3m2!1sen!2suk!4v1751879648801!5m2!1sen!2suk" 
                 width="100%" 
                 height="100%" 
                 style={{border:0}} 
@@ -405,14 +406,6 @@ const ContactPage: React.FC = () => {
                 </div>
 
                 <div className="flex space-x-4">
-                  <a
-                    href="https://maps.google.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-primary"
-                  >
-                    Get Directions
-                  </a>
                   <a
                     href="tel:07766141811"
                     className="btn btn-secondary flex items-center"

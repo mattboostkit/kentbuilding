@@ -12,7 +12,8 @@ import { motion } from 'framer-motion';
 const AboutBanner: React.FC = () => {
   return (
     <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-              <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/HP.jpg?updatedAt=1751885849914')] bg-cover bg-center opacity-20"></div>
+              <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Heritage%20and%20Listed/Heritage-6.jpg?updatedAt=1751887981031')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 to-gray-900/60"></div>
       <div className="container-custom relative z-10 text-center">
         <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
           About <span className="text-primary-300">Kent Building & Construction</span>
@@ -104,7 +105,7 @@ const AboutPage: React.FC = () => {
                   My passion for precision began when I left my childhood home of New Zealand and moved to Western Australia to work in the mining industry. The apprenticeship I undertook there still plays a part in the way I map out a build today and enables me to see the whole process through – always looking out for any potential pitfalls along the way.
                 </p>
                 <p>
-                  After spending 5 years travelling to various African, Malaysian and Indonesian locations to build gold and mineral processing plants, I ended up here in the UK. It was then I decided to start up my own business and Kent Building and Construction was born. My limited company grew and grew as our reputation went from strength to strength, and we have now been trading for over 20 years.
+                  After spending 5 years travelling to various African, Malaysian and Indonesian locations to build gold and mineral processing plants, I ended up here in the UK. It was then I decided to start up my own business and Kent Building and Construction Ltd was born. My limited company grew and grew as our reputation went from strength to strength, and we have now been trading for over 20 years.
                 </p>
                 <p>
                   We are based in the southeastern corner of England and tend to cover most of Kent and East Sussex. However, as we also have regular clients with portfolios of properties, we are no strangers to building in France, Belgium and beyond.
@@ -142,8 +143,8 @@ const AboutPage: React.FC = () => {
                     <Award className="text-primary-600" size={24} />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-gray-900">15+ Awards</p>
-                    <p className="text-gray-600">For Excellence</p>
+                    <p className="text-2xl font-bold text-gray-900">150+ Projects</p>
+                    <p className="text-gray-600">Completed</p>
                   </div>
                 </div>
               </div>

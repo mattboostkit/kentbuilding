@@ -16,7 +16,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-16 bg-gray-50">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -66,7 +66,7 @@ const About: React.FC = () => {
 
             <div className="mt-8 text-gray-600 space-y-5 leading-relaxed">
               <p>
-                My name is Spencer Ellis and I am the proud owner of Kent Building and Construction LTD. At Kent Building and Construction, we have over 20 years of experience and offer only the very highest possible quality at the most affordable prices.
+                My name is Spencer Ellis and I am the proud owner of Kent Building and Construction Ltd. At Kent Building and Construction Ltd, we have over 20 years of experience and offer only the very highest possible quality at the most affordable prices.
               </p>
               <p>
                 As home owners with families ourselves we appreciate how daunting the thought of builders in your home or business can be and respect your property and care for your project as much as you do yourself. We offer only the highest possible quality of workmanship and would be delighted to show you any number of examples of this should you wish to join us to inspect any of our previous projects.

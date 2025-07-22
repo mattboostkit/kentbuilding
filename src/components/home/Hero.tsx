@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl text-gray-200 mt-8 max-w-2xl"
           >
-            We deliver exceptional building solutions with exceptional craftsmanship and superior service for both residential and commercial projects.
+            We deliver outstanding building solutions with exceptional craftsmanship and superior service for both residential and commercial projects.
           </motion.p>
 
           <motion.div

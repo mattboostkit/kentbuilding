@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 
 const Footer: React.FC = () => {
-  const logoWhiteUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/KBAC_Logo.webp?updatedAt=1751889823385";
+  const logoWhiteUrl = "https://ik.imagekit.io/boostkit/Kent%20Building/KBAC%20V2.webp?updatedAt=1752566844734";
 
   const currentYear = new Date().getFullYear();
 

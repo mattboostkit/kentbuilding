@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const ContactCTA: React.FC = () => {
   return (
-    <section className="py-24">
+    <section className="py-16">
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <motion.div
