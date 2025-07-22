@@ -38,7 +38,7 @@ const services = [
     title: 'Structural Repairs',
     description: 'Safeguarding the integrity of your building with expert structural solutions.',
     slug: 'structural-repairs',
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-9.jpg?updatedAt=1751888401747',
+            image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-10.jpg?updatedAt=1753207783413',
   },
   {
     title: 'Kitchens and Bathrooms',

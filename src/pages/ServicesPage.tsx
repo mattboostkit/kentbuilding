@@ -96,7 +96,7 @@ const services = [
       'Timber repairs and damp proofing',
     ],
     icon: Wrench,
-    image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-9.jpg?updatedAt=1751888401747',
+            image: 'https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-10.jpg?updatedAt=1753207783413',
   },
   {
     id: 'kitchens-bathrooms',

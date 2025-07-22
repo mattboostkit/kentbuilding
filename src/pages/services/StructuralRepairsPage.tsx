@@ -10,7 +10,7 @@ const StructuralRepairsPage: React.FC = () => {
 
   // Gallery images array
   const galleryImages = [
-    'https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-9.jpg?updatedAt=1751888401747',
+    'https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-10.jpg?updatedAt=1753207783413',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-1.jpg?updatedAt=1751888401876',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-2.jpg?updatedAt=1751888401889',
     'https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-3.jpg?updatedAt=1751888401617',
@@ -79,7 +79,7 @@ const StructuralRepairsPage: React.FC = () => {
     <>
       {/* Hero Section */}
       <section className="bg-primary-600 text-white pt-48 pb-28 relative">
-        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-9.jpg?updatedAt=1751888401747')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-10.jpg?updatedAt=1753207783413')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 to-gray-900/60"></div>
         <div className="container-custom relative z-10 text-center">
           <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 text-white">
@@ -149,7 +149,7 @@ const StructuralRepairsPage: React.FC = () => {
               viewport={{ once: true, margin: "-100px" }}
             >
               <img 
-                src="https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-9.jpg?updatedAt=1751888401747"
+                src="https://ik.imagekit.io/boostkit/Kent%20Building/Structural%20Repairs/Structural-10.jpg?updatedAt=1753207783413"
                 alt="Structural Repair Project"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />
