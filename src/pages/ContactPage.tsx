@@ -45,14 +45,40 @@ const ContactPage: React.FC = () => {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      console.log('Form data:', data);
-      // In a real application, you would send the data to your server here
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      setSubmitStatus('success');
-      reset();
-    } catch {
+      // Prepare form data for Netlify
+      const formData = new FormData();
+      formData.append('form-name', 'contact');
+      formData.append('firstName', data.firstName);
+      formData.append('lastName', data.lastName);
+      formData.append('email', data.email);
+      formData.append('phone', data.phone);
+      formData.append('projectType', data.projectType);
+      formData.append('message', data.message);
+
+      // Submit to Netlify
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams([
+          ['form-name', 'contact'],
+          ['firstName', data.firstName],
+          ['lastName', data.lastName],
+          ['email', data.email],
+          ['phone', data.phone],
+          ['projectType', data.projectType],
+          ['message', data.message],
+        ]).toString(),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        reset();
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -224,7 +250,13 @@ const ContactPage: React.FC = () => {
                   </div>
                 )}
 
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit(onSubmit)}>
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p className="hidden">
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field" />
+                    </label>
+                  </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <div>
                       <label htmlFor="firstName" className="block text-gray-700 font-medium mb-1">
