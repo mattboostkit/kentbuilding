@@ -30,7 +30,7 @@ const StatsSection: React.FC = () => (
         
         <div className="flex flex-col items-center text-center">
           <div className="p-6 rounded-full bg-primary-600/20 mb-4">
-            <img src="https://ik.imagekit.io/boostkit/Kent%20Building/FMB.svg?updatedAt=1747756996556" alt="FMB Logo" className="h-9 w-auto" />
+            <img src="https://ik.imagekit.io/boostkit/Kent%20Building/FMB.svg?updatedAt=1747756996556" alt="FMB Logo" className="h-9 w-auto" loading="lazy" />
           </div>
           <p className="text-gray-900 font-bold text-2xl mb-2">FMB Member</p>
           <p className="text-gray-600 text-base">For 15 Years</p>

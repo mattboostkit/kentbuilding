@@ -160,6 +160,7 @@ const RestorationRefurbishmentPage: React.FC = () => {
                 src="https://ik.imagekit.io/boostkit/Kent%20Building/Restoration%20and%20Refurbishment/Restoration-1.jpg?updatedAt=1751887634004"
                 alt="Restoration Project"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
+                loading="lazy"
               />
             </motion.div>
           </div>
@@ -183,6 +184,7 @@ const RestorationRefurbishmentPage: React.FC = () => {
                       src={image}
                       alt={`Restoration Project ${index + 1}`}
                       className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
                       <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">

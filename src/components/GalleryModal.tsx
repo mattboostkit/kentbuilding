@@ -108,6 +108,7 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
               src={images[currentIndex]}
               alt={`Gallery image ${currentIndex + 1}`}
               className="max-w-full max-h-full object-contain"
+              loading="lazy"
             />
           </motion.div>
 
@@ -135,6 +136,7 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
                   src={image}
                   alt={`Thumbnail ${index + 1}`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </button>
             ))}

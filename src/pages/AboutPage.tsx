@@ -166,7 +166,7 @@ const AboutPage: React.FC = () => {
               </div>
               <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-lg shadow-lg max-w-xs">
                 <div className="flex items-center">
-                  <img src="https://ik.imagekit.io/boostkit/Kent%20Building/FMB.svg?updatedAt=1747756996556" alt="Federation of Master Builders Logo" className="w-12 h-12 mr-4" />
+                  <img src="https://ik.imagekit.io/boostkit/Kent%20Building/FMB.svg?updatedAt=1747756996556" alt="Federation of Master Builders Logo" className="w-12 h-12 mr-4" loading="lazy" />
                   <div>
                     <p className="text-lg font-bold text-gray-900">Federation of Master Builders</p>
                     <p className="text-gray-600">Member #71497</p>

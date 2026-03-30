@@ -54,7 +54,7 @@ const AccreditationsBanner: React.FC = () => {
             >
               <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mb-3">
                 {item.isImage && item.imageSrc ? (
-                <img src={item.imageSrc} alt={item.title} className="h-8 w-auto" />
+                <img src={item.imageSrc} alt={item.title} className="h-8 w-auto" loading="lazy" />
               ) : item.icon ? (
                 <item.icon size={24} className="text-primary-600" />
               ) : null}

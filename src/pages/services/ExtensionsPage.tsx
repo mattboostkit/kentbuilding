@@ -152,6 +152,7 @@ const ExtensionsPage: React.FC = () => {
                 src="https://ik.imagekit.io/boostkit/Kent%20Building/Extensions/Extensions-6.jpg?updatedAt=1751885526800"
                 alt="House Extension Project"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
+                loading="lazy"
               />
             </motion.div>
           </div>
@@ -175,6 +176,7 @@ const ExtensionsPage: React.FC = () => {
                       src={image}
                       alt={`Extension Project ${index + 1}`}
                       className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
                       <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">

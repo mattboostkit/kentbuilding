@@ -67,10 +67,11 @@ const ServiceCard: React.FC<{
       <div className="p-10">
         {image && (
           <div className="mb-6">
-            <img 
-              src={image} 
+            <img
+              src={image}
               alt={title}
               className="w-full h-48 object-cover rounded-lg"
+              loading="lazy"
             />
         </div>
         )}
